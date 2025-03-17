@@ -1,0 +1,2887 @@
+// Fonts
+
+@font-face {
+  font-family: "SpaceMono-Bold";
+  src: url("../Fonts/SpaceMono-Bold.ttf") format(truetype);
+}
+
+@font-face {
+  font-family: "SpaceMono-Regular";
+  src: url("../Fonts/SpaceMono-Regular.ttf") format(truetype);
+}
+
+@font-face {
+  font-family: "WorkSans-Bold";
+  src: url("../Fonts/WorkSans-Bold.ttf") format(truetype);
+}
+
+@font-face {
+  font-family: "WorkSans-Medium";
+  src: url("../Fonts/WorkSans-Medium.ttf") format(truetype);
+}
+
+@font-face {
+  font-family: "WorkSans-Regular";
+  src: url("../Fonts/WorkSans-Regular.ttf") format(truetype);
+}
+
+// Global Styles
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 6.7rem;
+}
+h2 {
+  font-size: 5.1rem;
+}
+h3 {
+  font-size: 3.8rem;
+}
+h4 {
+  font-size: 2.8rem;
+}
+
+h5 {
+  font-size: 2.2rem;
+}
+
+h1,
+h2,
+h3,
+h5 {
+  color: #fff;
+  @extend %main-md-font;
+}
+
+p {
+  color: #fff;
+  font-size: 2.2rem;
+  @extend %main-rg-font;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2.2rem;
+  @extend %txt-color2;
+  @extend %main-rg-font;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.wrapper2 {
+  width: 80%;
+  margin: auto;
+}
+
+.hidden0 {
+  display: none;
+}
+
+input {
+  @extend %main-rg-font;
+  font-size: 1.6rem;
+  outline: none;
+}
+
+// Colors styles & Fonts
+%background-color1 {
+  background: #2b2b2b;
+}
+%background-color2 {
+  background: #3b3b3b;
+}
+%background-color3 {
+  background: #b680fd;
+}
+
+%txt-color1 {
+  color: #858584;
+}
+%txt-color2 {
+  color: #fff;
+}
+%txt-color3 {
+  color: #9253e2;
+}
+%txt-color4 {
+  color: #cecece;
+}
+%txt-color5 {
+  color: #2b2b2b;
+}
+
+%main-rg-font {
+  font-family: WorkSans-Regular, sans-serif;
+}
+%main-md-font {
+  font-family: WorkSans-Medium, sans-serif;
+}
+%main-bl-font {
+  font-family: WorkSans-Bold, sans-serif;
+}
+%extra-rg-font {
+  font-family: SpaceMono-Regular, monospace;
+}
+%extra-bl-font {
+  font-family: SpaceMono-Bold, monospace;
+}
+
+// Buttons styles
+%primary-btn {
+  @extend %txt-color5;
+  @extend %background-color3;
+  height: 70px;
+  padding: 0 3rem;
+  border-radius: 20px;
+  @extend %main-md-font;
+  gap: 1rem;
+  a {
+    display: flex;
+    justify-content: center;
+    @extend %main-md-font;
+    @extend %txt-color5;
+    gap: 1rem;
+    padding: 0.5rem 2rem;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  border-color: #a259ff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+// Card Styles
+
+%card-styles {
+  width: 32%;
+  border-radius: 20px;
+  @extend %background-color2;
+  .img-card {
+    width: 100%;
+    img {
+      border-radius: 20px 20px 0 0;
+      width: 100%;
+    }
+  }
+  .info {
+    padding: 2rem 3rem 2.5rem 3rem;
+    h5 {
+      @extend %txt-color2;
+    }
+    .avatar {
+      @extend %extra-rg-font;
+      display: flex;
+      font-size: 1.6rem;
+      align-items: center;
+      gap: 1rem;
+      img {
+        width: 45px;
+        border-radius: 50%;
+      }
+      @extend %txt-color2;
+      padding: 0.5rem 0 1.6rem 0;
+    }
+  }
+  .stats-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: SpaceMono-Regular, monospace;
+    font-size: 1.6rem;
+    .stat {
+      @extend %txt-color2;
+      .inf {
+        color: #d6d6d6;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+%cont-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// <!-- Header -->
+
+.main-head {
+  width: 100vw;
+  min-height: 10vh;
+  @extend %background-color1;
+  nav {
+    .logo {
+      a {
+        img {
+          width: 244px;
+          height: 32px;
+        }
+      }
+    }
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    ul {
+      display: flex;
+      align-items: center;
+      .menu {
+        display: none;
+        cursor: pointer;
+        img {
+          width: 4rem;
+        }
+      }
+      li {
+        margin-left: 3rem;
+
+        .btn {
+          @extend %primary-btn;
+          a {
+            padding: auto;
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// <!-- Hero (section) -->
+
+.hero {
+  min-height: 90vh;
+  @extend %background-color1;
+  .wrapper {
+    padding-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .heading-card {
+      width: 45%;
+      h1 {
+        width: 80%;
+        font-size: 6.8rem;
+        font-weight: 900;
+      }
+      .body-text {
+        margin: 3rem 0;
+        line-height: 3.5rem;
+        letter-spacing: 1.5px;
+      }
+      .btn {
+        @extend %primary-btn;
+        margin-bottom: 3rem;
+        a {
+          img {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+
+      .stats-container {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        .stat {
+          font-size: 2.8rem;
+          .bold {
+            @extend %extra-bl-font;
+          }
+        }
+      }
+    }
+
+    .nft-card {
+      margin: 3rem;
+      border-radius: 20px;
+      @extend %background-color2;
+      width: 45%;
+      height: 60%;
+      .img-card {
+        width: 100%;
+        height: 50%;
+        img {
+          border-radius: 20px 20px 0 0;
+          width: 100%;
+          height: 450px;
+        }
+      }
+      h5 {
+        font-size: 2.4rem;
+        padding: 1rem;
+      }
+      .avatar {
+        @extend %extra-rg-font;
+        display: flex;
+        font-size: 1.6rem;
+        align-items: center;
+        gap: 1rem;
+        margin-left: 1rem;
+        img {
+          width: 45px;
+          border-radius: 50%;
+        }
+        @extend %txt-color2;
+        padding: 0.5rem 0 1.6rem 0;
+      }
+    }
+  }
+}
+
+// Trending collection (section)
+.trend-collection {
+  gap: 4rem;
+  min-height: 100vh;
+  @extend %background-color1;
+  .wrapper {
+    .subhead {
+      line-height: 5rem;
+    }
+    padding: 2rem 0;
+  }
+
+  .wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .collection {
+      width: 32%;
+      .primary-photo {
+        width: 100%;
+        margin-bottom: 1rem;
+        img {
+          border-radius: 20px;
+          width: 100%;
+        }
+      }
+
+      .secondary-photo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .img-card {
+          width: 31%;
+          img {
+            border-radius: 20px;
+            width: 100%;
+          }
+          &:nth-child(3) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            cursor: pointer;
+            @extend %background-color3;
+            a {
+              @extend %extra-bl-font;
+              font-size: 2.2rem;
+              @extend %txt-color5;
+            }
+          }
+        }
+      }
+      h5 {
+        padding-top: 1rem;
+      }
+      .avatar {
+        padding: 1rem 0;
+        display: flex;
+        gap: 1rem;
+        img {
+          width: 40px;
+          border-radius: 50%;
+        }
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+// Top creators (section)
+
+.creators {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  @extend %background-color1;
+  .wrapper {
+    h3 {
+      margin-bottom: 1.5rem;
+    }
+    .collect {
+      display: flex;
+      justify-content: space-between;
+      p {
+        margin-top: 1rem;
+      }
+      .btn {
+        a {
+          color: #fff;
+        }
+        background-color: #2d2d2d;
+        margin-top: -3rem;
+        @extend%primary-btn;
+      }
+    }
+  }
+
+  .wrapper2 {
+    margin: 6rem auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.2rem;
+    padding-bottom: 6rem;
+    .creators-card {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 0.75rem;
+      width: 23.4%;
+      position: relative;
+      border-radius: 20px;
+      @extend %background-color2;
+      .rank-num {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        color: #fff;
+        @extend %background-color1;
+        font-size: 1.6rem;
+        padding: 1rem 1.4rem;
+        text-align: center;
+        border-radius: 50%;
+      }
+      .img-card {
+        width: 50%;
+        padding: 1.5rem;
+        margin: 0 auto;
+        img {
+          border-radius: 50%;
+          width: 100%;
+        }
+      }
+      .add-info {
+        h5 {
+          padding-bottom: 1rem;
+          letter-spacing: 1px;
+        }
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 1rem;
+        @extend %extra-rg-font;
+        .sale {
+          @extend %txt-color4;
+          font-size: 1.6rem;
+          .num {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Browse Categories (section)
+.browse {
+  padding-bottom: 4rem;
+  min-height: 100vh;
+  @extend %background-color1;
+  .wrapper {
+    h3 {
+      padding: 3.5rem 0;
+    }
+  }
+  .wrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.8rem;
+    .browse-card {
+      border-radius: 20px;
+      width: 23%;
+      @extend %background-color2;
+      .img-card {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      h5 {
+        padding: 1.5rem 0 3rem 2rem;
+      }
+    }
+  }
+}
+
+// Discover more NFTs (section)
+.discover {
+  padding-bottom: 2rem;
+  @extend %background-color1;
+  min-height: 100vh;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0;
+    line-height: 6rem;
+    .discover-headind {
+      width: 60%;
+    }
+    .test {
+      margin-top: 4rem;
+      .btn {
+        @extend %primary-btn;
+        background: #2b2b2b;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    .card {
+      @extend%card-styles;
+    }
+  }
+}
+
+// Magic Mashroom (section)
+.magic-mashroom {
+  min-height: 100vh;
+  background: linear-gradient(0, #6f00ff, transparent),
+    url("../Arts:img/mushroom-min.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  .wrapper {
+    position: absolute;
+    bottom: 5rem;
+    left: 10%;
+    display: flex;
+    justify-content: space-between;
+    .mushroom {
+      width: 60%;
+      .avatar {
+        @extend %background-color2;
+        width: 200px;
+        text-align: center;
+        border-radius: 20px;
+        margin-bottom: 3rem;
+        a {
+          padding: 0.5rem 0 0.5rem 2rem;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          img {
+            width: 35px;
+            border-radius: 50%;
+          }
+        }
+      }
+      h2 {
+        font-size: 5rem;
+        padding-bottom: 3rem;
+        font-weight: 200;
+      }
+      .btn {
+        @extend %primary-btn;
+        background: #fff;
+      }
+    }
+    .time-auction {
+      width: 350px;
+      background: rgba(59, 59, 59, 0.7);
+      border-radius: 20px;
+      color: #fff;
+      @extend %extra-rg-font;
+      .foot {
+        font-size: 1.6rem;
+      }
+      p {
+        padding: 5rem 0 0 3rem;
+      }
+      .time-container {
+        display: flex;
+        justify-content: center;
+        .time {
+          .num,
+          .dots {
+            @extend %extra-bl-font;
+            font-size: 5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// How it works (section)
+.how-works {
+  min-height: 100vh;
+  @extend %background-color1;
+  .wrapper {
+    line-height: 5rem;
+    margin-bottom: 3rem;
+    padding-top: 5rem;
+  }
+  .wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .card-row {
+      gap: 2rem;
+      border-radius: 20px;
+      @extend %background-color2;
+      width: 32%;
+      text-align: center;
+      padding: 2rem 4rem 4rem 4rem;
+      .img-card {
+        padding-bottom: 2rem;
+      }
+      .card-text {
+        h5 {
+          font-size: 2.8rem;
+          // padding: 1.5rem;
+        }
+        p {
+          padding: 1rem 3rem 0 3rem;
+          line-height: 2.8rem;
+        }
+      }
+    }
+  }
+}
+
+// Subscribe widget (section)
+
+.sub-widget {
+  min-height: 60vh;
+  @extend %background-color1;
+  padding: 4rem;
+  .wrapper {
+    @extend %background-color2;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    gap: 8rem;
+    padding: 6rem;
+    .img-card {
+      width: 45%;
+      img {
+        width: 100%;
+      }
+    }
+    .sub-form {
+      width: 45%;
+      .sub-head {
+        gap: 2rem;
+        text-transform: capitalize;
+        padding-bottom: 3rem;
+        h3 {
+          width: 70%;
+          padding-bottom: 2rem;
+        }
+        p {
+          width: 80%;
+          line-height: 3.5rem;
+        }
+      }
+      form {
+        width: 100%;
+        display: flex;
+        .input-box {
+          input {
+            border-radius: 20px;
+            width: 120%;
+            padding: 2.2rem 2.2rem;
+          }
+        }
+        .btn-sub {
+          @extend %primary-btn;
+          @extend %cont-center;
+          img {
+            width: 3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Footer (section)
+
+footer {
+  min-height: 40vh;
+  @extend %background-color2;
+  padding: 4rem 0;
+  .wrapper {
+    display: flex;
+    padding-bottom: 3rem;
+    .marketplace-info {
+      width: 32%;
+      .logo {
+        padding-bottom: 3rem;
+      }
+      .addition-info {
+        width: 60%;
+        p {
+          font-size: 1.6rem;
+          @extend %txt-color4;
+        }
+        .com-info {
+          padding: 2rem 0 1rem 0;
+        }
+      }
+    }
+    .explore {
+      width: 25%;
+      h5 {
+        padding-bottom: 3rem;
+      }
+      ul {
+        li {
+          padding-bottom: 2rem;
+          a {
+            @extend %txt-color4;
+            font-size: 1.6rem;
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .subscribe {
+      width: 50%;
+      h5 {
+        padding-bottom: 3rem;
+      }
+      .sub-form {
+        .sub-text {
+          width: 60%;
+          padding-bottom: 2rem;
+          p {
+            font-size: 1.6rem;
+            @extend %txt-color4;
+          }
+        }
+        form {
+          width: 100%;
+          display: flex;
+          .input-box {
+            input {
+              border-radius: 20px;
+              width: 120%;
+              padding: 2.1rem 2.2rem;
+            }
+          }
+          .btn-sub {
+            @extend %primary-btn;
+            @extend %cont-center;
+          }
+        }
+      }
+    }
+  }
+  .frame {
+    margin: auto;
+    width: 80%;
+    border-top: 2px solid #858584;
+    p {
+      padding-top: 1.6rem;
+      font-size: 1.6rem;
+      @extend %txt-color2;
+    }
+  }
+}
+
+// ....... SIGN UP .......
+
+.hero-create-acc {
+  min-height: 80vh;
+  @extend %background-color1;
+  .creating-acc-wrapper {
+    display: flex;
+    justify-content: space-between;
+    .img-card {
+      width: 48%;
+      img {
+        width: 100%;
+      }
+    }
+    .form-card {
+      width: 48%;
+      .caa-heading {
+        padding: 10rem 0 4rem 0;
+        width: 60%;
+        h2 {
+          padding-bottom: 1rem;
+        }
+        p {
+          line-height: 3rem;
+        }
+      }
+      form {
+        .input-box {
+          width: 50%;
+          margin-bottom: 1.7rem;
+          position: relative;
+          height: 50px;
+          background: #fff;
+          border-radius: 20px;
+          font-size: 1.8rem;
+          input {
+            background: none;
+            padding-left: 4.5rem;
+            border: none;
+            width: 100%;
+            height: 100%;
+            font-size: 1.6rem;
+            &::placeholder {
+              @extend %main-rg-font;
+            }
+          }
+          img {
+            position: absolute;
+            left: 1.8rem;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+        .btn {
+          margin-top: 1rem;
+          @extend %primary-btn;
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+//...... CONNECT WALLET.HTML .......
+
+.hero-conwallet {
+  min-height: 80vh;
+  @extend %background-color1;
+  .conwallet-wrapper {
+    display: flex;
+    justify-content: space-between;
+    .img-card {
+      width: 48%;
+      img {
+        width: 100%;
+      }
+    }
+    .wallet-card {
+      width: 48%;
+      .wallet-heading {
+        padding: 10rem 0 4rem 0;
+        width: 55%;
+        h2 {
+          padding-bottom: 1rem;
+        }
+        p {
+          line-height: 3rem;
+        }
+      }
+      .wallet-options {
+        width: 40%;
+        .option {
+          width: 100%;
+          @extend %background-color2;
+          border: 1px solid #a259ff;
+          border-radius: 20px;
+          margin-bottom: 2rem;
+          display: flex;
+          h5 {
+            display: flex;
+            align-items: center;
+          }
+          img {
+            padding: 1rem 2rem 1rem 4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ...... RANKING.HTML......
+
+// Ranking heading (section)
+.ra-heading {
+  @extend %background-color1;
+  @extend %cont-center;
+  min-height: 30vh;
+  .wrapper {
+    h2 {
+      padding-bottom: 3rem;
+    }
+  }
+}
+
+// Frame nav (section)
+nav {
+  @extend %background-color1;
+  .show {
+    .tab {
+      display: none;
+    }
+  }
+  .wrapper {
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    li {
+      width: 100%;
+      text-align: center;
+      a {
+        display: inline-block;
+        &:focus {
+          @extend %txt-color2;
+          border-bottom: 1px solid #fff;
+        }
+        width: 100%;
+        @extend %main-md-font;
+        padding-bottom: 1.5rem;
+        font-size: 2rem;
+        @extend %txt-color4;
+        &:hover {
+          @extend %txt-color2;
+        }
+      }
+    }
+  }
+}
+
+// Ranking  (section)
+.ranking {
+  @extend %background-color1;
+  .wrapper2 {
+    padding-bottom: 4rem;
+    .header {
+      cursor: pointer;
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      border: 2px solid #3b3b3b;
+      font-size: 1.8rem;
+      @extend %txt-color4;
+      .rancard {
+        width: 40%;
+        display: flex;
+        .rank {
+          padding: 0 2rem;
+        }
+        .artist {
+          padding-left: 3rem;
+        }
+      }
+    }
+    .row {
+      margin-top: 1.5rem;
+      border-radius: 20px;
+      @extend %background-color2;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #333;
+      font-size: 2rem;
+      color: #fff;
+      .rancard {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        .rank {
+          @extend %background-color1;
+          padding: 0.5rem 1rem;
+          border-radius: 50%;
+          @extend %txt-color4;
+        }
+        .artist {
+          display: flex;
+          align-items: center;
+          font-size: 2.2rem;
+          @extend %main-md-font;
+          img {
+            border-radius: 50%;
+            padding: 0 2rem;
+            width: 100px;
+          }
+        }
+      }
+      .change,
+      .sold,
+      .volume {
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        @extend %extra-rg-font;
+      }
+      .green {
+        color: #04d264;
+      }
+    }
+  }
+}
+
+// ....... MARKETPLACE.HTML ......
+
+// MARKETPLACE (SECTION)
+
+.mphead {
+  @extend %background-color1;
+  min-height: 30vh;
+  flex-direction: column;
+  @extend %cont-center;
+  .wrapper {
+    line-height: 5rem;
+    padding: 4rem 0;
+    p {
+      padding-bottom: 3rem;
+    }
+    .searchinput {
+      border: 1px solid #858584;
+      margin: auto;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      border-radius: 20px;
+      position: relative;
+      input {
+        &:focus {
+          outline: 1px solid #a259ff;
+          border-radius: 20px;
+        }
+        font-size: 2rem;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        background: none;
+        padding: 1rem 2rem;
+        border: none;
+        &::placeholder {
+          @extend %txt-color4;
+          font-size: 1.8rem;
+          @extend %main-rg-font;
+        }
+      }
+      img {
+        position: absolute;
+        top: 30%;
+        right: 30px;
+      }
+    }
+  }
+}
+
+// Marketplace NFT Cards (section)
+
+.marketnft {
+  nav {
+    .tabs {
+      width: 75%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      padding-top: 2rem;
+      li {
+        width: 50%;
+        text-align: center;
+
+        a {
+          width: 100%;
+          display: inline-block;
+          padding-bottom: 1.6rem;
+          @extend %txt-color4;
+          font-size: 2.2rem;
+          @extend %main-md-font;
+          border-bottom: 2px solid #2b2b2b;
+          .num {
+            @extend %background-color2;
+            padding: 1rem;
+            border-radius: 50%;
+            color: #fff;
+            @extend %extra-rg-font;
+            font-size: 1.6rem;
+          }
+          &:hover {
+            color: #fff;
+          }
+          &:focus {
+            color: #fff;
+            border-bottom-color: #fff;
+            .num {
+              background: #bbbbb9;
+              padding: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .nftcards {
+    @extend %background-color1;
+    .wrapper2 {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 6rem 0;
+      .card {
+        @extend %background-color1;
+        @extend %card-styles;
+      }
+    }
+  }
+}
+
+// ....... NFTPAGE.HTML .......
+
+// <!-- NFT Image placeholder -->
+.imgplace {
+  background: url(../Arts:img/space-min.png);
+  width: 100%;
+  min-height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+// <!-- Artists Info (section) -->
+
+.artistsinfo {
+  @extend %background-color1;
+  .wrapper {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    .nftinfo {
+      width: 55%;
+      .nftinfo-subhead {
+        p {
+          @extend %txt-color4;
+        }
+      }
+      .nft-addinfo {
+        h5 {
+          @extend %txt-color4;
+          @extend %extra-rg-font;
+        }
+        .author-info {
+          padding: 2rem 0;
+          @extend %extra-rg-font;
+          .avatar {
+            @extend %extra-rg-font;
+            display: flex;
+            font-size: 1.6rem;
+            align-items: center;
+            gap: 1rem;
+            img {
+              width: 25px;
+              border-radius: 50%;
+            }
+            @extend %txt-color2;
+            padding: 0.5rem 0 1.6rem 0;
+          }
+        }
+        .description {
+          width: 100%;
+          h5 {
+            margin-bottom: 1.5rem;
+          }
+          p {
+            line-height: 3.2rem;
+          }
+          .parag1 {
+            padding-bottom: 2rem;
+          }
+        }
+        .details {
+          h5 {
+            margin-bottom: 1.5rem;
+          }
+          .weblink {
+            display: flex;
+            flex-direction: column;
+            a {
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              margin-bottom: 1rem;
+              font-size: 1.8rem;
+            }
+          }
+          .tags {
+            ul {
+              display: flex;
+              li {
+                margin-right: 2rem;
+                text-transform: uppercase;
+                a {
+                  background: #3b3b3b;
+                  padding: 1rem 3rem;
+                  border-radius: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .countdown {
+      width: 300px;
+      height: 220px;
+      text-align: center;
+      font-size: 2.5rem;
+      @extend %background-color2;
+      padding: 3rem 2rem;
+      border-radius: 20px;
+      color: #fff;
+      @extend %extra-rg-font;
+      p,
+      .par {
+        font-size: 1.4rem;
+      }
+      p {
+        text-align: start;
+        padding: 0 0 0.5rem 1rem;
+      }
+      .time {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+      .unit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .number {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+    }
+    .btn {
+      width: 100%;
+      margin-top: 2rem;
+      @extend %primary-btn;
+    }
+  }
+}
+
+// <!-- More NFTs From The Artist -->
+
+.morenfts {
+  @extend %background-color1;
+  .nfts-subhead {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    .btn {
+      @extend %primary-btn;
+      background-color: #2b2b2b;
+      a {
+        color: #fff;
+      }
+    }
+  }
+  .wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 6rem 0;
+    .nftcard {
+      @extend %card-styles;
+    }
+  }
+}
+
+// ....... ARTISTS.HTML .......
+
+// Cover &  Profile image (section)
+
+.covpro {
+  @extend %background-color1;
+  position: relative;
+  h5 {
+    @extend %txt-color4;
+  }
+  .coverimg {
+    background: linear-gradient(0, #a259ff, transparent),
+      url(../Arts:img/Castle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+  }
+  .proimg {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 32%;
+    left: 17rem;
+    img {
+      border: 2px solid;
+      border-radius: 20px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .wrapper {
+    padding: 10rem 0 5rem 0;
+    .artinfo-subhead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .btns {
+        .btn1 {
+          @extend %primary-btn;
+          margin-right: 1rem;
+        }
+        .btn2 {
+          @extend %primary-btn;
+          background: #2b2b2b;
+          color: #fff;
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    .artadd-info {
+      h5 {
+        padding-bottom: 1rem;
+        @extend %extra-rg-font;
+      }
+      .statscontainer {
+        color: #fff;
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem 0 2rem 0;
+        .stat {
+          font-size: 2.5rem;
+          @extend %extra-bl-font;
+          font-weight: 900;
+          .prop {
+            @extend %main-rg-font;
+            font-size: 2rem;
+          }
+        }
+      }
+      .bio {
+        padding-bottom: 2rem;
+      }
+
+      .links {
+        ul {
+          display: flex;
+          li {
+            padding-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+nav {
+  .tabs {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    li {
+      width: 50%;
+      text-align: center;
+      a {
+        width: 100%;
+        display: inline-block;
+        padding-bottom: 1.6rem;
+        @extend %txt-color4;
+        @extend %main-md-font;
+        border-bottom: 2px solid #2b2b2b;
+        .num {
+          @extend %background-color2;
+          padding: 1rem;
+          border-radius: 50%;
+          color: #fff;
+          @extend %extra-rg-font;
+          font-size: 1.6rem;
+        }
+        &:hover {
+          color: #fff;
+        }
+        &:focus {
+          color: #fff;
+          border-bottom-color: #fff;
+          .num {
+            background: #c8c8c7;
+            padding: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// NFTs Cards (section)
+.nftscards {
+  @extend %background-color2;
+  .wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 6rem 0;
+    .nftcard {
+      @extend %card-styles;
+      background: #2b2b2b;
+    }
+  }
+}
+@media (max-width: 759.9px) {
+  // Global Styles
+  h1 {
+    font-size: 3.8rem;
+  }
+  h2,
+  h3 {
+    font-size: 2.8rem;
+  }
+  .hidden1,
+  .hidden2 {
+    display: none;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  // <!-- Header -->
+
+  .main-head {
+    width: 100%;
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    nav {
+      ul {
+        .hidden0 {
+          display: contents;
+        }
+        li {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // hero section
+  .hero {
+    .wrapper {
+      padding-bottom: 15rem;
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 2rem;
+      width: 100%;
+      position: relative;
+      .heading-card {
+        width: 85%;
+        margin: auto;
+        h1 {
+          width: 100%;
+          font-size: 2.8rem;
+        }
+        .body-text {
+          font-size: 1.6rem;
+          line-height: 2.24rem;
+        }
+        .stats-container {
+          width: 80%;
+          position: absolute;
+          bottom: 0;
+          left: 10%;
+          .stat {
+            font-size: 2rem;
+          }
+        }
+        .btn {
+          a {
+            font-size: 1.6rem;
+          }
+          padding: 0 2rem;
+          height: 55px;
+          width: 80%;
+          position: absolute;
+          bottom: 5%;
+          left: 10%;
+        }
+      }
+      .nft-card {
+        margin: auto;
+        padding-top: 0;
+        width: 85%;
+        .img-card {
+          img {
+            height: 300px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  // Trending collection (section)
+  .trend-collection {
+    .wrapper {
+      .subhead {
+        line-height: 3rem;
+        p {
+          line-height: 2.5rem;
+        }
+      }
+    }
+    .wrapper2 {
+      .collection {
+        .hidden2,
+        .hidden1 {
+          display: none;
+        }
+        width: 400px;
+        .secondary-photo {
+          .number {
+            padding: 0 1.5rem;
+          }
+        }
+        .avatar {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  // top creators (section)
+
+  .creators {
+    position: relative;
+    .wrapper {
+      .collect {
+        display: flex;
+        p {
+          font-size: 1.8rem;
+          line-height: 2.8rem;
+          padding-bottom: 3rem;
+        }
+        .btn {
+          height: 45px;
+          padding: 1rem 2rem;
+          a {
+            font-size: 1.6rem;
+          }
+          width: 80%;
+          position: absolute;
+          bottom: 2rem;
+          z-index: 10;
+          pointer-events: auto;
+        }
+      }
+    }
+    .wrapper2 {
+      position: relative;
+      padding-bottom: 10rem;
+      .creators-card {
+        width: 100%;
+        &:nth-child(7),
+        &:nth-child(8),
+        &:nth-child(9),
+        &:nth-child(10),
+        &:nth-child(11),
+        &:nth-child(12) {
+          display: none;
+        }
+        a {
+          display: flex;
+          padding: 0;
+
+          .rank-num {
+            top: 1rem;
+            left: 1rem;
+            font-size: 1.4rem;
+            padding: 0.75rem 1.2rem;
+          }
+          .img-card {
+            padding: 0;
+            width: 20%;
+            img {
+              width: 100%;
+            }
+          }
+          .add-info {
+            h5 {
+              font-size: 2rem;
+            }
+            .sale {
+              font-size: 1.4rem;
+            }
+            text-align: start;
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  // Browse Categories (section)
+
+  .browse {
+    width: 100%;
+    .wrapper2 {
+      gap: 1rem;
+      .browse-card {
+        width: 48%;
+        h5 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  // Discover more NFTs (section)
+
+  .discover {
+    position: relative;
+    .wrapper {
+      line-height: 3.5rem;
+      .test {
+        .btn {
+          a {
+            font-size: 1.8rem;
+          }
+          width: 80%;
+          position: absolute;
+          left: 10%;
+          bottom: 2rem;
+          z-index: 10px;
+          pointer-events: auto;
+          height: 45px;
+        }
+      }
+    }
+    .wrapper2 {
+      padding-bottom: 8rem;
+      gap: 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      .card {
+        width: 100%;
+      }
+    }
+  }
+
+  // Magic Mushroom
+
+  .magic-mashroom {
+    min-height: 80vh;
+    position: relative;
+    .wrapper {
+      padding-bottom: 5rem;
+      display: flex;
+      flex-wrap: wrap;
+      .mushroom {
+        .avatar {
+          a {
+            font-size: 1.6rem;
+          }
+        }
+        h2 {
+          font-size: 3.8rem;
+          width: 50%;
+        }
+        width: 100%;
+        .btn {
+          width: 100%;
+          height: 50px;
+          position: absolute;
+          bottom: -1.5rem;
+        }
+      }
+      .time-auction {
+        width: 100%;
+        padding: 2rem 0;
+        p {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+
+  // How it works (section)
+
+  .how-works {
+    .wrapper {
+      line-height: 3.5rem;
+      h3 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.8rem;
+      }
+    }
+    .wrapper2 {
+      display: flex;
+      gap: 2rem;
+      .card-row {
+        display: flex;
+        padding: 0;
+        width: 100%;
+        .img-card {
+          padding: 3rem 0.5rem;
+          width: 40%;
+          img {
+            width: 100%;
+          }
+        }
+        .card-text {
+          width: 60%;
+          text-align: start;
+          padding: 1.5rem 0.5rem;
+          h5 {
+            font-size: 1.6rem;
+          }
+          p {
+            line-height: 1.8rem;
+            padding: 1rem 0;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+  // Subscribe widget (section)
+
+  .sub-widget {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    .wrapper {
+      background: none;
+      display: flex;
+      flex-direction: column;
+      width: 85%;
+      padding: 0;
+      .img-card {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .sub-form {
+        width: 100%;
+        .sub-head {
+          h3 {
+            font-size: 3rem;
+          }
+          p {
+            line-height: 2.5rem;
+            font-size: 1.6rem;
+          }
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          .input-box {
+            padding-bottom: 2rem;
+            input {
+              border-radius: 35px;
+              width: 100%;
+              padding: 1.2rem 2.2rem;
+            }
+          }
+          .btn-sub {
+            height: 50px;
+            padding: 1rem 2rem;
+            border-radius: 35px;
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  // Footer (section)
+
+  footer {
+    .wrapper {
+      width: 85%;
+      display: flex;
+      flex-direction: column;
+      .marketplace-info {
+        width: 100%;
+        .addition-info {
+          width: 100%;
+          padding-bottom: 2rem;
+        }
+      }
+      .explore {
+        width: 100%;
+      }
+
+      .subscribe {
+        width: 100%;
+        .sub-form {
+          .sub-text {
+            width: 100%;
+          }
+          form {
+            display: flex;
+            flex-direction: column;
+            .input-box {
+              padding-bottom: 2rem;
+              input {
+                border-radius: 35px;
+                width: 100%;
+                padding: 1.7rem 2.2rem;
+              }
+            }
+            .btn-sub {
+              height: 50px;
+              padding: 1rem 2rem;
+              border-radius: 35px;
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+      .frame {
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  //...... SIGN UP.HTML .......
+
+  // hero (section)
+  .hero-create-acc {
+    .creating-acc-wrapper {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      .img-card {
+        width: 100%;
+        height: 350px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .form-card {
+        width: 100%;
+        .caa-heading {
+          width: 85%;
+          margin: 0 auto;
+          padding-top: 4rem;
+          h2 {
+            font-size: 3.8rem;
+          }
+          p {
+            line-height: 2.4rem;
+            font-size: 1.6rem;
+          }
+        }
+        form {
+          width: 85%;
+          margin: auto;
+          .input-box {
+            width: 100%;
+          }
+
+          .btn {
+            width: 100%;
+            margin-bottom: 3.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  //...... CONNECT WALLET.HTML .......
+  .hero-conwallet {
+    .conwallet-wrapper {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      .img-card {
+        width: 100%;
+        height: 350px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .wallet-card {
+        width: 100%;
+        .wallet-heading {
+          width: 85%;
+          margin: 0 auto;
+          padding-top: 4rem;
+          h2 {
+            font-size: 3.8rem;
+          }
+          p {
+            line-height: 2.4rem;
+            font-size: 1.6rem;
+          }
+        }
+        .wallet-options {
+          width: 85%;
+          margin: auto;
+          padding-bottom: 2rem;
+        }
+      }
+    }
+  }
+
+  // ...... RANKING.HTML......
+
+  // Ranking heading (section)
+  .ra-heading {
+    .wrapper {
+      h2 {
+        font-size: 2.8rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  // Frame nav (section)
+  nav {
+    .none {
+      display: none;
+    }
+    .show {
+      .tab {
+        a {
+          font-size: 1.6rem;
+        }
+        display: contents;
+      }
+    }
+  }
+  // Ranking  (section)
+  .ranking {
+    .wrapper2 {
+      .header {
+        .change,
+        .sold {
+          display: none;
+        }
+      }
+      .row {
+        padding: 1rem 1rem;
+        .rancard {
+          width: 77%;
+          .rank {
+            font-size: 1.6rem;
+            padding: 0.75rem 1rem;
+          }
+          .artist {
+            font-size: 1.6rem;
+            img {
+              width: 70px;
+              padding: 0 0.75rem;
+            }
+          }
+        }
+        .change,
+        .sold {
+          display: none;
+        }
+        .volume {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  // ....... MARKETPLACE.HTML ......
+
+  // MARKETPLACE (SECTION)
+
+  .mphead {
+    .wrapper {
+      line-height: 3rem;
+      padding: 2rem 0;
+      .searchinput {
+        height: 60px;
+        position: relative;
+        input {
+          font-size: 1.8rem;
+          &::placeholder {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  // Marketplace NFT Cards (section)
+  .marketnft {
+    nav {
+      .tabs {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        li {
+          a {
+            font-size: 2rem;
+            .num {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+
+    .nftcards {
+      .wrapper2 {
+        padding: 4rem 0;
+        .card {
+          width: 100%;
+        }
+        .hidden {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // ....... NFTPAGE.HTML .......
+  .imgplace {
+    min-height: 40vh;
+  }
+
+  // <!-- Artists Info (section) -->
+  .artistsinfo {
+    position: relative;
+    .wrapper {
+      padding: 2rem 0;
+      display: flex;
+      flex-direction: column;
+      .nftinfo-subhead {
+        padding-bottom: 22rem;
+      }
+      .nftinfo {
+        width: 100%;
+        .nft-addinfo {
+          .author-info {
+            padding: 2rem 0;
+            .avatar {
+              padding-left: 0;
+              img {
+                width: 30px;
+              }
+            }
+          }
+          .description {
+            width: 100%;
+            h5 {
+              margin-bottom: 1.5rem;
+            }
+            p {
+              line-height: 2rem;
+            }
+          }
+          .details {
+            h5 {
+              margin-bottom: 1.5rem;
+            }
+            .weblink {
+              a {
+                margin-bottom: 1rem;
+              }
+            }
+            .tags {
+              ul {
+                display: flex;
+                flex-direction: column;
+                li {
+                  margin: 2rem 0 2rem 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      .countdown {
+        width: 80%;
+        height: 200px;
+        margin: 1rem auto;
+        position: absolute;
+        top: 8rem;
+        p,
+        .par {
+          font-size: 1.4rem;
+        }
+        .btn {
+          height: 50px;
+          a {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+  .morenfts {
+    position: relative;
+    .nfts-subhead {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        font-size: 2.8rem;
+      }
+      .btn {
+        a {
+          font-size: 1.6rem;
+        }
+        height: 55px;
+        position: absolute;
+        left: 10%;
+        bottom: 2rem;
+        width: 80%;
+        z-index: 10;
+        pointer-events: auto;
+      }
+    }
+    .nftcards {
+      .wrapper2 {
+        padding: 4rem 0 10rem 0;
+        .nftcard {
+          width: 100%;
+        }
+        .hidden1,
+        .hidden2 {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // ....... ARTISTS.HTML .......
+
+  // Cover &  Profile image (section)
+
+  .covpro {
+    .coverimg {
+      // min-height: 400px;
+    }
+    .proimg {
+      left: 12rem;
+    }
+    .wrapper {
+      padding: 10rem 0 5rem 0;
+      .artinfo-subhead {
+        display: flex;
+        flex-direction: column;
+        h2 {
+          padding-bottom: 3rem;
+        }
+        .btns {
+          .btn1,
+          .btn2 {
+            width: 100%;
+            height: 50px;
+            a {
+              font-size: 1.6rem;
+            }
+            margin-bottom: 1.5rem;
+          }
+        }
+      }
+      .artadd-info {
+        .statscontainer {
+          width: 100%;
+          .stat {
+            font-size: 1.8rem;
+            .prop {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  nav {
+    .tabs {
+      width: 85%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      padding-top: 1rem;
+      li {
+        a {
+          font-size: 1.6rem;
+          .num {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  // NFTs Cards (section)
+
+  .nftscards {
+    .wrapper2 {
+      position: relative;
+      padding: 4rem 0 13rem 0;
+      .nftcard {
+        width: 100%;
+      }
+      .hidden,
+      .hidden2 {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1124px) {
+  // Global Styles
+  h1 {
+    font-size: 3.8rem;
+  }
+  h2,
+  h3 {
+    font-size: 2.8rem;
+  }
+  .hidden2 {
+    display: none;
+  }
+  .hidden0 {
+    display: contents;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+
+  // Header
+  .main-head {
+    min-height: 8vh;
+
+    display: flex;
+    align-items: center;
+    nav {
+      ul {
+        .hidden0 {
+          display: contents;
+        }
+        li {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // Hero(section)
+  .hero {
+    min-height: 60vh;
+    width: 100%;
+    .wrapper {
+      .heading-card {
+        h1 {
+          font-size: 3.8rem;
+        }
+        .body-text {
+          font-size: 1.6rem;
+          line-height: 2.24rem;
+        }
+        .btn {
+          a {
+            font-size: 1.8rem;
+          }
+          padding: 0 2.5rem;
+          height: 60px;
+        }
+        .stats-container {
+          .stat {
+            font-size: 2rem;
+          }
+        }
+      }
+      .nft-card {
+        margin: auto;
+        padding-top: 0;
+        .img-card {
+          img {
+            height: 330px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  // Trending collection (section)
+  .trend-collection {
+    min-height: 60vh;
+    .wrapper {
+      .subhead {
+        line-height: 3.2rem;
+        h3 {
+          font-size: 2.8rem;
+        }
+        p {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .wrapper2 {
+      .hidden2 {
+        display: none;
+      }
+      .collection {
+        width: 48%;
+        .avatar {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  // Top creators (section)
+  .creators {
+    min-height: 60vh;
+    .wrapper {
+      .collect {
+        display: flex;
+        p {
+          font-size: 1.6rem;
+        }
+        .btn {
+          height: 55px;
+          padding: 0 2.5rem;
+          a {
+            font-size: 1.8rem;
+            padding: 0;
+            img {
+              width: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    .wrapper2 {
+      position: relative;
+      display: flex;
+      gap: 1.5rem;
+      .creators-card {
+        width: 48%;
+        &:nth-child(7),
+        &:nth-child(8),
+        &:nth-child(9),
+        &:nth-child(10),
+        &:nth-child(11),
+        &:nth-child(12) {
+          display: none;
+        }
+        a {
+          display: flex;
+          .rank-num {
+            top: 1rem;
+            left: 1rem;
+            font-size: 1.4rem;
+          }
+          .img-card {
+            padding: 0;
+            width: 20%;
+            img {
+              width: 100%;
+            }
+          }
+          .add-info {
+            text-align: start;
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+  // Browse Categories (section)
+  .browse {
+    min-height: 60vh;
+    .wrapper2 {
+      gap: 1.5rem;
+      .browse-card {
+        h5 {
+          padding: 1.5rem 0 2rem 1rem;
+        }
+      }
+    }
+  }
+
+  // Discover more NFTs (section)
+
+  .discover {
+    min-height: 60vh;
+
+    .wrapper2 {
+      .card {
+        width: 48%;
+        &:nth-child(3) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // Magic Mashroom
+  .magic-mashroom {
+    min-height: 70vh;
+    .wrapper {
+      .mushroom {
+        .btn {
+          height: 60px;
+        }
+      }
+    }
+  }
+  // How it works
+  .how-works {
+    min-height: 60vh;
+    .wrapper {
+      line-height: 2.8rem;
+      h3 {
+        font-size: 2.8rem;
+      }
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    .wrapper2 {
+      .card-row {
+        padding: 2rem 2rem 1rem 2rem;
+        .img-card {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+        .card-text {
+          h5 {
+            font-size: 2rem;
+            font-weight: bolder;
+          }
+          p {
+            padding: 1rem 0;
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  // Subscribe widget (section)
+  .sub-widget {
+    min-height: 60vh;
+    padding: 0;
+    .wrapper {
+      padding: 4rem 2rem;
+      gap: 2rem;
+      .img-card {
+        width: 45%;
+        img {
+          height: 330px;
+          width: 100%;
+        }
+      }
+      .sub-form {
+        .sub-head {
+          h3 {
+            font-size: 2.8rem;
+          }
+          p {
+            font-size: 1.8rem;
+          }
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          .input-box {
+            padding-bottom: 2rem;
+            input {
+              border-radius: 35px;
+              width: 100%;
+              padding: 1.7rem 2.2rem;
+            }
+          }
+          .btn-sub {
+            height: 60px;
+            border-radius: 35px;
+          }
+        }
+      }
+    }
+  }
+
+  // Footer (section)
+  footer {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      .marketplace-info {
+        width: 100%;
+      }
+      .subscribe {
+        width: 100%;
+        .sub-form {
+          .btn-sub {
+            padding: 0;
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
+  //Sign up (section)
+
+  .hero-create-acc {
+    min-height: 60px;
+    .creating-acc-wrapper {
+      width: 100%;
+      .img-card {
+        width: 48%;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .form-card {
+        width: 48%;
+        .caa-heading {
+          width: 100%;
+          padding-top: 4rem;
+          h2 {
+            font-size: 3.8rem;
+          }
+        }
+        form {
+          .input-box {
+            width: 90%;
+          }
+          .btn {
+            width: 90%;
+            margin-bottom: 3rem;
+          }
+        }
+      }
+    }
+  }
+
+  //...... CONNECT WALLET.HTML .......
+
+  // Connect Wallet (section)
+
+  .hero-conwallet {
+    .conwallet-wrapper {
+      width: 100%;
+      .img-card {
+        width: 48%;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .wallet-card {
+        width: 48%;
+        .wallet-heading {
+          width: 100%;
+          padding-top: 4rem;
+          h2 {
+            font-size: 3.8rem;
+          }
+        }
+        .wallet-options {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  // ...... RANKING.HTML......
+
+  // Ranking heading (section)
+  .ra-heading {
+    min-height: 20vh;
+    .wrapper {
+      h2 {
+        font-size: 3.8rem;
+      }
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  // Frame nav (section)
+  nav {
+    .wrapper {
+      width: 100%;
+    }
+  }
+
+  // Ranking (section)
+  .ranking {
+    .wrapper2 {
+      .header {
+        .sold {
+          display: none;
+        }
+      }
+      .row {
+        .rancard {
+          width: 45%;
+        }
+        .sold {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // ....... MARKETPLACE.HTML ......
+
+  // MARKETPLACE (SECTION)
+
+  .mphead {
+    .wrapper {
+      line-height: 3rem;
+      padding: 2rem 0;
+      .searchinput {
+        position: relative;
+        input {
+          font-size: 1.8rem;
+          &::placeholder {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  // Marketplace NFT Cards (section)
+  .marketnft {
+    nav {
+      .tabs {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        li {
+          a {
+            font-size: 2rem;
+            .num {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+
+    .nftcards {
+      .wrapper2 {
+        padding: 4rem 0;
+        gap: 2rem;
+        .card {
+          width: 48%;
+        }
+        .hidden:nth-child(3),
+        .hidden:nth-child(5),
+        .hidden:nth-child(6),
+        .hidden:nth-child(7) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // ....... NFTPAGE.HTML .......
+  .imgplace {
+    min-height: 50vh;
+  }
+
+  // <!-- Artists Info (section) -->
+
+  .artistsinfo {
+    .wrapper {
+      padding: 2rem 0;
+      .nftinfo {
+        width: 100%;
+        .nft-addinfo {
+          .author-info {
+            padding: 2rem 0;
+            .avatar {
+              padding-left: 0;
+              img {
+                width: 30px;
+              }
+            }
+          }
+          .description {
+            width: 100%;
+            h5 {
+              margin-bottom: 1.5rem;
+            }
+            p {
+              font-size: 1.6rem;
+              line-height: 2rem;
+            }
+          }
+          .details {
+            h5 {
+              margin-bottom: 1.5rem;
+            }
+            .weblink {
+              a {
+                margin-bottom: 1rem;
+              }
+            }
+            .tags {
+              ul {
+                display: flex;
+                flex-direction: column;
+                li {
+                  margin: 2rem 0 2rem 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      .countdown {
+        height: 200px;
+        margin: 1rem auto;
+        .btn {
+          height: 60px;
+        }
+        p,
+        .par {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  .morenfts {
+    .nfts-subhead {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      .btn {
+        height: 60px;
+        a {
+          font-size: 1.8rem;
+        }
+      }
+    }
+    .nftcards {
+      .wrapper2 {
+        padding: 4rem 0;
+        .nftcard {
+          width: 48%;
+        }
+        .hidden2 {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // ....... ARTISTS.HTML .......
+
+  // Cover &  Profile image (section)
+  .covpro {
+    .wrapper {
+      .artinfo-subhead {
+        .btns {
+          .btn1,
+          .btn2 {
+            height: 60px;
+          }
+        }
+      }
+      .artadd-info {
+        .statscontainer {
+          width: 40%;
+          .stat {
+            font-size: 2rem;
+            .prop {
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // NFTs Cards (section)
+
+  .nftscards {
+    .wrapper2 {
+      padding: 4rem 0;
+      gap: 2rem;
+      .nftcard {
+        width: 48%;
+      }
+      .hidden2 {
+        display: none;
+      }
+    }
+  }
+}
+// @media screen and (max-width: 1100px) {
+// }

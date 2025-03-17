@@ -1,0 +1,1796 @@
+@font-face {
+  font-family: "SpaceMono-Bold";
+  src: url("../Fonts/SpaceMono-Bold.ttf") format(truetype); }
+@font-face {
+  font-family: "SpaceMono-Regular";
+  src: url("../Fonts/SpaceMono-Regular.ttf") format(truetype); }
+@font-face {
+  font-family: "WorkSans-Bold";
+  src: url("../Fonts/WorkSans-Bold.ttf") format(truetype); }
+@font-face {
+  font-family: "WorkSans-Medium";
+  src: url("../Fonts/WorkSans-Medium.ttf") format(truetype); }
+@font-face {
+  font-family: "WorkSans-Regular";
+  src: url("../Fonts/WorkSans-Regular.ttf") format(truetype); }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+h1 {
+  font-size: 6.7rem; }
+
+h2 {
+  font-size: 5.1rem; }
+
+h3 {
+  font-size: 3.8rem; }
+
+h4 {
+  font-size: 2.8rem; }
+
+h5 {
+  font-size: 2.2rem; }
+
+h1,
+h2,
+h3,
+h5 {
+  color: #fff; }
+
+p {
+  color: #fff;
+  font-size: 2.2rem; }
+
+a {
+  text-decoration: none;
+  font-size: 2.2rem; }
+
+ul {
+  list-style: none; }
+
+.wrapper {
+  width: 80%;
+  margin: auto; }
+
+.wrapper2 {
+  width: 80%;
+  margin: auto; }
+
+.hidden0 {
+  display: none; }
+
+input {
+  font-size: 1.6rem;
+  outline: none; }
+
+.main-head, .hero, .trend-collection, .creators, .creators .wrapper2 .creators-card .rank-num, .browse, .discover, .how-works, .sub-widget, .hero-create-acc, .hero-conwallet, .ra-heading, nav, .ranking, .ranking .wrapper2 .row .rancard .rank, .mphead, .marketnft .nftcards, .marketnft .nftcards .wrapper2 .card, .artistsinfo, .morenfts, .covpro {
+  background: #2b2b2b; }
+
+.discover .wrapper2 .card, .marketnft .nftcards .wrapper2 .card, .morenfts .wrapper2 .nftcard, .nftscards .wrapper2 .nftcard, .hero .wrapper .nft-card, .creators .wrapper2 .creators-card, .browse .wrapper2 .browse-card, .magic-mashroom .wrapper .mushroom .avatar, .how-works .wrapper2 .card-row, .sub-widget .wrapper, footer, .hero-conwallet .conwallet-wrapper .wallet-card .wallet-options .option, .ranking .wrapper2 .row, .marketnft nav .tabs li a .num, .artistsinfo .wrapper .countdown, nav .tabs li a .num, .nftscards {
+  background: #3b3b3b; }
+
+.main-head nav ul li .btn, .hero .wrapper .heading-card .btn, .creators .wrapper .collect .btn, .discover .wrapper .test .btn, .magic-mashroom .wrapper .mushroom .btn, .sub-widget .wrapper .sub-form form .btn-sub, footer .wrapper .subscribe .sub-form form .btn-sub, .hero-create-acc .creating-acc-wrapper .form-card form .btn, .artistsinfo .wrapper .btn, .morenfts .nfts-subhead .btn, .covpro .wrapper .artinfo-subhead .btns .btn1, .covpro .wrapper .artinfo-subhead .btns .btn2, .trend-collection .wrapper2 .collection .secondary-photo .img-card:nth-child(3) {
+  background: #b680fd; }
+
+a, .discover .wrapper2 .card .info h5, .marketnft .nftcards .wrapper2 .card .info h5, .morenfts .wrapper2 .nftcard .info h5, .nftscards .wrapper2 .nftcard .info h5, .discover .wrapper2 .card .info .avatar, .marketnft .nftcards .wrapper2 .card .info .avatar, .morenfts .wrapper2 .nftcard .info .avatar, .nftscards .wrapper2 .nftcard .info .avatar, .discover .wrapper2 .card .stats-container .stat, .marketnft .nftcards .wrapper2 .card .stats-container .stat, .morenfts .wrapper2 .nftcard .stats-container .stat, .nftscards .wrapper2 .nftcard .stats-container .stat, .hero .wrapper .nft-card .avatar, footer .frame p, nav .wrapper li a:focus, nav .wrapper li a:hover, .artistsinfo .wrapper .nftinfo .nft-addinfo .author-info .avatar {
+  color: #fff; }
+
+.creators .wrapper2 .creators-card .add-info .sale, footer .wrapper .marketplace-info .addition-info p, footer .wrapper .explore ul li a, footer .wrapper .subscribe .sub-form .sub-text p, nav .wrapper li a, .ranking .wrapper2 .header, .ranking .wrapper2 .row .rancard .rank, .mphead .wrapper .searchinput input::placeholder, .marketnft nav .tabs li a, .artistsinfo .wrapper .nftinfo .nftinfo-subhead p, .artistsinfo .wrapper .nftinfo .nft-addinfo h5, .covpro h5, nav .tabs li a {
+  color: #cecece; }
+
+.main-head nav ul li .btn, .hero .wrapper .heading-card .btn, .creators .wrapper .collect .btn, .discover .wrapper .test .btn, .magic-mashroom .wrapper .mushroom .btn, .sub-widget .wrapper .sub-form form .btn-sub, footer .wrapper .subscribe .sub-form form .btn-sub, .hero-create-acc .creating-acc-wrapper .form-card form .btn, .artistsinfo .wrapper .btn, .morenfts .nfts-subhead .btn, .covpro .wrapper .artinfo-subhead .btns .btn1, .covpro .wrapper .artinfo-subhead .btns .btn2, .main-head nav ul li .btn a, .hero .wrapper .heading-card .btn a, .creators .wrapper .collect .btn a, .discover .wrapper .test .btn a, .magic-mashroom .wrapper .mushroom .btn a, .sub-widget .wrapper .sub-form form .btn-sub a, footer .wrapper .subscribe .sub-form form .btn-sub a, .hero-create-acc .creating-acc-wrapper .form-card form .btn a, .artistsinfo .wrapper .btn a, .morenfts .nfts-subhead .btn a, .covpro .wrapper .artinfo-subhead .btns .btn1 a, .covpro .wrapper .artinfo-subhead .btns .btn2 a, .trend-collection .wrapper2 .collection .secondary-photo .img-card:nth-child(3) a {
+  color: #2b2b2b; }
+
+p, a, input, .hero-create-acc .creating-acc-wrapper .form-card form .input-box input::placeholder, .mphead .wrapper .searchinput input::placeholder, .covpro .wrapper .artadd-info .statscontainer .stat .prop {
+  font-family: WorkSans-Regular, sans-serif; }
+
+h1,
+h2,
+h3,
+h5, .main-head nav ul li .btn, .hero .wrapper .heading-card .btn, .creators .wrapper .collect .btn, .discover .wrapper .test .btn, .magic-mashroom .wrapper .mushroom .btn, .sub-widget .wrapper .sub-form form .btn-sub, footer .wrapper .subscribe .sub-form form .btn-sub, .hero-create-acc .creating-acc-wrapper .form-card form .btn, .artistsinfo .wrapper .btn, .morenfts .nfts-subhead .btn, .covpro .wrapper .artinfo-subhead .btns .btn1, .covpro .wrapper .artinfo-subhead .btns .btn2, .main-head nav ul li .btn a, .hero .wrapper .heading-card .btn a, .creators .wrapper .collect .btn a, .discover .wrapper .test .btn a, .magic-mashroom .wrapper .mushroom .btn a, .sub-widget .wrapper .sub-form form .btn-sub a, footer .wrapper .subscribe .sub-form form .btn-sub a, .hero-create-acc .creating-acc-wrapper .form-card form .btn a, .artistsinfo .wrapper .btn a, .morenfts .nfts-subhead .btn a, .covpro .wrapper .artinfo-subhead .btns .btn1 a, .covpro .wrapper .artinfo-subhead .btns .btn2 a, nav .wrapper li a, .ranking .wrapper2 .row .rancard .artist, .marketnft nav .tabs li a, nav .tabs li a {
+  font-family: WorkSans-Medium, sans-serif; }
+
+.discover .wrapper2 .card .info .avatar, .marketnft .nftcards .wrapper2 .card .info .avatar, .morenfts .wrapper2 .nftcard .info .avatar, .nftscards .wrapper2 .nftcard .info .avatar, .hero .wrapper .nft-card .avatar, .creators .wrapper2 .creators-card .add-info, .magic-mashroom .wrapper .time-auction, .ranking .wrapper2 .row .change,
+.ranking .wrapper2 .row .sold,
+.ranking .wrapper2 .row .volume, .marketnft nav .tabs li a .num, .artistsinfo .wrapper .nftinfo .nft-addinfo h5, .artistsinfo .wrapper .nftinfo .nft-addinfo .author-info, .artistsinfo .wrapper .nftinfo .nft-addinfo .author-info .avatar, .artistsinfo .wrapper .countdown, .covpro .wrapper .artadd-info h5, nav .tabs li a .num {
+  font-family: SpaceMono-Regular, monospace; }
+
+.hero .wrapper .heading-card .stats-container .stat .bold, .trend-collection .wrapper2 .collection .secondary-photo .img-card:nth-child(3) a, .magic-mashroom .wrapper .time-auction .time-container .time .num,
+.magic-mashroom .wrapper .time-auction .time-container .time .dots, .covpro .wrapper .artadd-info .statscontainer .stat {
+  font-family: SpaceMono-Bold, monospace; }
+
+.main-head nav ul li .btn, .hero .wrapper .heading-card .btn, .creators .wrapper .collect .btn, .discover .wrapper .test .btn, .magic-mashroom .wrapper .mushroom .btn, .sub-widget .wrapper .sub-form form .btn-sub, footer .wrapper .subscribe .sub-form form .btn-sub, .hero-create-acc .creating-acc-wrapper .form-card form .btn, .artistsinfo .wrapper .btn, .morenfts .nfts-subhead .btn, .covpro .wrapper .artinfo-subhead .btns .btn1, .covpro .wrapper .artinfo-subhead .btns .btn2 {
+  height: 70px;
+  padding: 0 3rem;
+  border-radius: 20px;
+  gap: 1rem;
+  border-color: #a259ff;
+  font-size: 2rem;
+  cursor: pointer; }
+  .main-head nav ul li .btn a, .hero .wrapper .heading-card .btn a, .creators .wrapper .collect .btn a, .discover .wrapper .test .btn a, .magic-mashroom .wrapper .mushroom .btn a, .sub-widget .wrapper .sub-form form .btn-sub a, footer .wrapper .subscribe .sub-form form .btn-sub a, .hero-create-acc .creating-acc-wrapper .form-card form .btn a, .artistsinfo .wrapper .btn a, .morenfts .nfts-subhead .btn a, .covpro .wrapper .artinfo-subhead .btns .btn1 a, .covpro .wrapper .artinfo-subhead .btns .btn2 a {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem 2rem; }
+    .main-head nav ul li .btn a img, .hero .wrapper .heading-card .btn a img, .creators .wrapper .collect .btn a img, .discover .wrapper .test .btn a img, .magic-mashroom .wrapper .mushroom .btn a img, .sub-widget .wrapper .sub-form form .btn-sub a img, footer .wrapper .subscribe .sub-form form .btn-sub a img, .hero-create-acc .creating-acc-wrapper .form-card form .btn a img, .artistsinfo .wrapper .btn a img, .morenfts .nfts-subhead .btn a img, .covpro .wrapper .artinfo-subhead .btns .btn1 a img, .covpro .wrapper .artinfo-subhead .btns .btn2 a img {
+      width: 20px;
+      height: 20px; }
+  .main-head nav ul li .btn img, .hero .wrapper .heading-card .btn img, .creators .wrapper .collect .btn img, .discover .wrapper .test .btn img, .magic-mashroom .wrapper .mushroom .btn img, .sub-widget .wrapper .sub-form form .btn-sub img, footer .wrapper .subscribe .sub-form form .btn-sub img, .hero-create-acc .creating-acc-wrapper .form-card form .btn img, .artistsinfo .wrapper .btn img, .morenfts .nfts-subhead .btn img, .covpro .wrapper .artinfo-subhead .btns .btn1 img, .covpro .wrapper .artinfo-subhead .btns .btn2 img {
+    width: 20px;
+    height: 20px; }
+
+.discover .wrapper2 .card, .marketnft .nftcards .wrapper2 .card, .morenfts .wrapper2 .nftcard, .nftscards .wrapper2 .nftcard {
+  width: 32%;
+  border-radius: 20px; }
+  .discover .wrapper2 .card .img-card, .marketnft .nftcards .wrapper2 .card .img-card, .morenfts .wrapper2 .nftcard .img-card, .nftscards .wrapper2 .nftcard .img-card {
+    width: 100%; }
+    .discover .wrapper2 .card .img-card img, .marketnft .nftcards .wrapper2 .card .img-card img, .morenfts .wrapper2 .nftcard .img-card img, .nftscards .wrapper2 .nftcard .img-card img {
+      border-radius: 20px 20px 0 0;
+      width: 100%; }
+  .discover .wrapper2 .card .info, .marketnft .nftcards .wrapper2 .card .info, .morenfts .wrapper2 .nftcard .info, .nftscards .wrapper2 .nftcard .info {
+    padding: 2rem 3rem 2.5rem 3rem; }
+    .discover .wrapper2 .card .info .avatar, .marketnft .nftcards .wrapper2 .card .info .avatar, .morenfts .wrapper2 .nftcard .info .avatar, .nftscards .wrapper2 .nftcard .info .avatar {
+      display: flex;
+      font-size: 1.6rem;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.5rem 0 1.6rem 0; }
+      .discover .wrapper2 .card .info .avatar img, .marketnft .nftcards .wrapper2 .card .info .avatar img, .morenfts .wrapper2 .nftcard .info .avatar img, .nftscards .wrapper2 .nftcard .info .avatar img {
+        width: 45px;
+        border-radius: 50%; }
+  .discover .wrapper2 .card .stats-container, .marketnft .nftcards .wrapper2 .card .stats-container, .morenfts .wrapper2 .nftcard .stats-container, .nftscards .wrapper2 .nftcard .stats-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: SpaceMono-Regular, monospace;
+    font-size: 1.6rem; }
+    .discover .wrapper2 .card .stats-container .stat .inf, .marketnft .nftcards .wrapper2 .card .stats-container .stat .inf, .morenfts .wrapper2 .nftcard .stats-container .stat .inf, .nftscards .wrapper2 .nftcard .stats-container .stat .inf {
+      color: #d6d6d6;
+      font-size: 1.4rem; }
+
+.sub-widget .wrapper .sub-form form .btn-sub, footer .wrapper .subscribe .sub-form form .btn-sub, .ra-heading, .mphead {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main-head {
+  width: 100vw;
+  min-height: 10vh; }
+  .main-head nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0; }
+    .main-head nav .logo a img {
+      width: 244px;
+      height: 32px; }
+    .main-head nav ul {
+      display: flex;
+      align-items: center; }
+      .main-head nav ul .menu {
+        display: none;
+        cursor: pointer; }
+        .main-head nav ul .menu img {
+          width: 4rem; }
+      .main-head nav ul li {
+        margin-left: 3rem; }
+        .main-head nav ul li .btn a {
+          padding: auto; }
+          .main-head nav ul li .btn a img {
+            width: 20px;
+            height: 20px; }
+
+.hero {
+  min-height: 90vh; }
+  .hero .wrapper {
+    padding-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .hero .wrapper .heading-card {
+      width: 45%; }
+      .hero .wrapper .heading-card h1 {
+        width: 80%;
+        font-size: 6.8rem;
+        font-weight: 900; }
+      .hero .wrapper .heading-card .body-text {
+        margin: 3rem 0;
+        line-height: 3.5rem;
+        letter-spacing: 1.5px; }
+      .hero .wrapper .heading-card .btn {
+        margin-bottom: 3rem; }
+        .hero .wrapper .heading-card .btn a img {
+          width: 30px;
+          height: 30px; }
+      .hero .wrapper .heading-card .stats-container {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        color: #fff; }
+        .hero .wrapper .heading-card .stats-container .stat {
+          font-size: 2.8rem; }
+    .hero .wrapper .nft-card {
+      margin: 3rem;
+      border-radius: 20px;
+      width: 45%;
+      height: 60%; }
+      .hero .wrapper .nft-card .img-card {
+        width: 100%;
+        height: 50%; }
+        .hero .wrapper .nft-card .img-card img {
+          border-radius: 20px 20px 0 0;
+          width: 100%;
+          height: 450px; }
+      .hero .wrapper .nft-card h5 {
+        font-size: 2.4rem;
+        padding: 1rem; }
+      .hero .wrapper .nft-card .avatar {
+        display: flex;
+        font-size: 1.6rem;
+        align-items: center;
+        gap: 1rem;
+        margin-left: 1rem;
+        padding: 0.5rem 0 1.6rem 0; }
+        .hero .wrapper .nft-card .avatar img {
+          width: 45px;
+          border-radius: 50%; }
+
+.trend-collection {
+  gap: 4rem;
+  min-height: 100vh; }
+  .trend-collection .wrapper {
+    padding: 2rem 0; }
+    .trend-collection .wrapper .subhead {
+      line-height: 5rem; }
+  .trend-collection .wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .trend-collection .wrapper2 .collection {
+      width: 32%; }
+      .trend-collection .wrapper2 .collection .primary-photo {
+        width: 100%;
+        margin-bottom: 1rem; }
+        .trend-collection .wrapper2 .collection .primary-photo img {
+          border-radius: 20px;
+          width: 100%; }
+      .trend-collection .wrapper2 .collection .secondary-photo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between; }
+        .trend-collection .wrapper2 .collection .secondary-photo .img-card {
+          width: 31%; }
+          .trend-collection .wrapper2 .collection .secondary-photo .img-card img {
+            border-radius: 20px;
+            width: 100%; }
+          .trend-collection .wrapper2 .collection .secondary-photo .img-card:nth-child(3) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            cursor: pointer; }
+            .trend-collection .wrapper2 .collection .secondary-photo .img-card:nth-child(3) a {
+              font-size: 2.2rem; }
+      .trend-collection .wrapper2 .collection h5 {
+        padding-top: 1rem; }
+      .trend-collection .wrapper2 .collection .avatar {
+        padding: 1rem 0;
+        display: flex;
+        gap: 1rem;
+        padding-left: 0; }
+        .trend-collection .wrapper2 .collection .avatar img {
+          width: 40px;
+          border-radius: 50%; }
+
+.creators {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh; }
+  .creators .wrapper h3 {
+    margin-bottom: 1.5rem; }
+  .creators .wrapper .collect {
+    display: flex;
+    justify-content: space-between; }
+    .creators .wrapper .collect p {
+      margin-top: 1rem; }
+    .creators .wrapper .collect .btn {
+      background-color: #2d2d2d;
+      margin-top: -3rem; }
+      .creators .wrapper .collect .btn a {
+        color: #fff; }
+  .creators .wrapper2 {
+    margin: 6rem auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.2rem;
+    padding-bottom: 6rem; }
+    .creators .wrapper2 .creators-card {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 0.75rem;
+      width: 23.4%;
+      position: relative;
+      border-radius: 20px; }
+      .creators .wrapper2 .creators-card .rank-num {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        color: #fff;
+        font-size: 1.6rem;
+        padding: 1rem 1.4rem;
+        text-align: center;
+        border-radius: 50%; }
+      .creators .wrapper2 .creators-card .img-card {
+        width: 50%;
+        padding: 1.5rem;
+        margin: 0 auto; }
+        .creators .wrapper2 .creators-card .img-card img {
+          border-radius: 50%;
+          width: 100%; }
+      .creators .wrapper2 .creators-card .add-info {
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 1rem; }
+        .creators .wrapper2 .creators-card .add-info h5 {
+          padding-bottom: 1rem;
+          letter-spacing: 1px; }
+        .creators .wrapper2 .creators-card .add-info .sale {
+          font-size: 1.6rem; }
+          .creators .wrapper2 .creators-card .add-info .sale .num {
+            color: #fff; }
+
+.browse {
+  padding-bottom: 4rem;
+  min-height: 100vh; }
+  .browse .wrapper h3 {
+    padding: 3.5rem 0; }
+  .browse .wrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.8rem; }
+    .browse .wrapper2 .browse-card {
+      border-radius: 20px;
+      width: 23%; }
+      .browse .wrapper2 .browse-card .img-card {
+        width: 100%; }
+        .browse .wrapper2 .browse-card .img-card img {
+          width: 100%; }
+      .browse .wrapper2 .browse-card h5 {
+        padding: 1.5rem 0 3rem 2rem; }
+
+.discover {
+  padding-bottom: 2rem;
+  min-height: 100vh; }
+  .discover .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0;
+    line-height: 6rem; }
+    .discover .wrapper .discover-headind {
+      width: 60%; }
+    .discover .wrapper .test {
+      margin-top: 4rem; }
+      .discover .wrapper .test .btn {
+        background: #2b2b2b; }
+        .discover .wrapper .test .btn a {
+          color: #fff; }
+  .discover .wrapper2 {
+    display: flex;
+    justify-content: space-between; }
+
+.magic-mashroom {
+  min-height: 100vh;
+  background: linear-gradient(0, #6f00ff, transparent), url("../Arts:img/mushroom-min.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  .magic-mashroom .wrapper {
+    position: absolute;
+    bottom: 5rem;
+    left: 10%;
+    display: flex;
+    justify-content: space-between; }
+    .magic-mashroom .wrapper .mushroom {
+      width: 60%; }
+      .magic-mashroom .wrapper .mushroom .avatar {
+        width: 200px;
+        text-align: center;
+        border-radius: 20px;
+        margin-bottom: 3rem; }
+        .magic-mashroom .wrapper .mushroom .avatar a {
+          padding: 0.5rem 0 0.5rem 2rem;
+          display: flex;
+          align-items: center;
+          gap: 1rem; }
+          .magic-mashroom .wrapper .mushroom .avatar a img {
+            width: 35px;
+            border-radius: 50%; }
+      .magic-mashroom .wrapper .mushroom h2 {
+        font-size: 5rem;
+        padding-bottom: 3rem;
+        font-weight: 200; }
+      .magic-mashroom .wrapper .mushroom .btn {
+        background: #fff; }
+    .magic-mashroom .wrapper .time-auction {
+      width: 350px;
+      background: rgba(59, 59, 59, 0.7);
+      border-radius: 20px;
+      color: #fff; }
+      .magic-mashroom .wrapper .time-auction .foot {
+        font-size: 1.6rem; }
+      .magic-mashroom .wrapper .time-auction p {
+        padding: 5rem 0 0 3rem; }
+      .magic-mashroom .wrapper .time-auction .time-container {
+        display: flex;
+        justify-content: center; }
+        .magic-mashroom .wrapper .time-auction .time-container .time .num,
+        .magic-mashroom .wrapper .time-auction .time-container .time .dots {
+          font-size: 5rem; }
+
+.how-works {
+  min-height: 100vh; }
+  .how-works .wrapper {
+    line-height: 5rem;
+    margin-bottom: 3rem;
+    padding-top: 5rem; }
+  .how-works .wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .how-works .wrapper2 .card-row {
+      gap: 2rem;
+      border-radius: 20px;
+      width: 32%;
+      text-align: center;
+      padding: 2rem 4rem 4rem 4rem; }
+      .how-works .wrapper2 .card-row .img-card {
+        padding-bottom: 2rem; }
+      .how-works .wrapper2 .card-row .card-text h5 {
+        font-size: 2.8rem; }
+      .how-works .wrapper2 .card-row .card-text p {
+        padding: 1rem 3rem 0 3rem;
+        line-height: 2.8rem; }
+
+.sub-widget {
+  min-height: 60vh;
+  padding: 4rem; }
+  .sub-widget .wrapper {
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    gap: 8rem;
+    padding: 6rem; }
+    .sub-widget .wrapper .img-card {
+      width: 45%; }
+      .sub-widget .wrapper .img-card img {
+        width: 100%; }
+    .sub-widget .wrapper .sub-form {
+      width: 45%; }
+      .sub-widget .wrapper .sub-form .sub-head {
+        gap: 2rem;
+        text-transform: capitalize;
+        padding-bottom: 3rem; }
+        .sub-widget .wrapper .sub-form .sub-head h3 {
+          width: 70%;
+          padding-bottom: 2rem; }
+        .sub-widget .wrapper .sub-form .sub-head p {
+          width: 80%;
+          line-height: 3.5rem; }
+      .sub-widget .wrapper .sub-form form {
+        width: 100%;
+        display: flex; }
+        .sub-widget .wrapper .sub-form form .input-box input {
+          border-radius: 20px;
+          width: 120%;
+          padding: 2.2rem 2.2rem; }
+        .sub-widget .wrapper .sub-form form .btn-sub img {
+          width: 3rem; }
+
+footer {
+  min-height: 40vh;
+  padding: 4rem 0; }
+  footer .wrapper {
+    display: flex;
+    padding-bottom: 3rem; }
+    footer .wrapper .marketplace-info {
+      width: 32%; }
+      footer .wrapper .marketplace-info .logo {
+        padding-bottom: 3rem; }
+      footer .wrapper .marketplace-info .addition-info {
+        width: 60%; }
+        footer .wrapper .marketplace-info .addition-info p {
+          font-size: 1.6rem; }
+        footer .wrapper .marketplace-info .addition-info .com-info {
+          padding: 2rem 0 1rem 0; }
+    footer .wrapper .explore {
+      width: 25%; }
+      footer .wrapper .explore h5 {
+        padding-bottom: 3rem; }
+      footer .wrapper .explore ul li {
+        padding-bottom: 2rem; }
+        footer .wrapper .explore ul li a {
+          font-size: 1.6rem; }
+          footer .wrapper .explore ul li a:hover {
+            color: #fff; }
+    footer .wrapper .subscribe {
+      width: 50%; }
+      footer .wrapper .subscribe h5 {
+        padding-bottom: 3rem; }
+      footer .wrapper .subscribe .sub-form .sub-text {
+        width: 60%;
+        padding-bottom: 2rem; }
+        footer .wrapper .subscribe .sub-form .sub-text p {
+          font-size: 1.6rem; }
+      footer .wrapper .subscribe .sub-form form {
+        width: 100%;
+        display: flex; }
+        footer .wrapper .subscribe .sub-form form .input-box input {
+          border-radius: 20px;
+          width: 120%;
+          padding: 2.1rem 2.2rem; }
+  footer .frame {
+    margin: auto;
+    width: 80%;
+    border-top: 2px solid #858584; }
+    footer .frame p {
+      padding-top: 1.6rem;
+      font-size: 1.6rem; }
+
+.hero-create-acc {
+  min-height: 80vh; }
+  .hero-create-acc .creating-acc-wrapper {
+    display: flex;
+    justify-content: space-between; }
+    .hero-create-acc .creating-acc-wrapper .img-card {
+      width: 48%; }
+      .hero-create-acc .creating-acc-wrapper .img-card img {
+        width: 100%; }
+    .hero-create-acc .creating-acc-wrapper .form-card {
+      width: 48%; }
+      .hero-create-acc .creating-acc-wrapper .form-card .caa-heading {
+        padding: 10rem 0 4rem 0;
+        width: 60%; }
+        .hero-create-acc .creating-acc-wrapper .form-card .caa-heading h2 {
+          padding-bottom: 1rem; }
+        .hero-create-acc .creating-acc-wrapper .form-card .caa-heading p {
+          line-height: 3rem; }
+      .hero-create-acc .creating-acc-wrapper .form-card form .input-box {
+        width: 50%;
+        margin-bottom: 1.7rem;
+        position: relative;
+        height: 50px;
+        background: #fff;
+        border-radius: 20px;
+        font-size: 1.8rem; }
+        .hero-create-acc .creating-acc-wrapper .form-card form .input-box input {
+          background: none;
+          padding-left: 4.5rem;
+          border: none;
+          width: 100%;
+          height: 100%;
+          font-size: 1.6rem; }
+        .hero-create-acc .creating-acc-wrapper .form-card form .input-box img {
+          position: absolute;
+          left: 1.8rem;
+          top: 50%;
+          transform: translateY(-50%); }
+      .hero-create-acc .creating-acc-wrapper .form-card form .btn {
+        margin-top: 1rem;
+        width: 50%; }
+
+.hero-conwallet {
+  min-height: 80vh; }
+  .hero-conwallet .conwallet-wrapper {
+    display: flex;
+    justify-content: space-between; }
+    .hero-conwallet .conwallet-wrapper .img-card {
+      width: 48%; }
+      .hero-conwallet .conwallet-wrapper .img-card img {
+        width: 100%; }
+    .hero-conwallet .conwallet-wrapper .wallet-card {
+      width: 48%; }
+      .hero-conwallet .conwallet-wrapper .wallet-card .wallet-heading {
+        padding: 10rem 0 4rem 0;
+        width: 55%; }
+        .hero-conwallet .conwallet-wrapper .wallet-card .wallet-heading h2 {
+          padding-bottom: 1rem; }
+        .hero-conwallet .conwallet-wrapper .wallet-card .wallet-heading p {
+          line-height: 3rem; }
+      .hero-conwallet .conwallet-wrapper .wallet-card .wallet-options {
+        width: 40%; }
+        .hero-conwallet .conwallet-wrapper .wallet-card .wallet-options .option {
+          width: 100%;
+          border: 1px solid #a259ff;
+          border-radius: 20px;
+          margin-bottom: 2rem;
+          display: flex; }
+          .hero-conwallet .conwallet-wrapper .wallet-card .wallet-options .option h5 {
+            display: flex;
+            align-items: center; }
+          .hero-conwallet .conwallet-wrapper .wallet-card .wallet-options .option img {
+            padding: 1rem 2rem 1rem 4rem; }
+
+.ra-heading {
+  min-height: 30vh; }
+  .ra-heading .wrapper h2 {
+    padding-bottom: 3rem; }
+
+nav .show .tab {
+  display: none; }
+nav .wrapper {
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-around; }
+  nav .wrapper li {
+    width: 100%;
+    text-align: center; }
+    nav .wrapper li a {
+      display: inline-block;
+      width: 100%;
+      padding-bottom: 1.5rem;
+      font-size: 2rem; }
+      nav .wrapper li a:focus {
+        border-bottom: 1px solid #fff; }
+
+.ranking .wrapper2 {
+  padding-bottom: 4rem; }
+  .ranking .wrapper2 .header {
+    cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 2px solid #3b3b3b;
+    font-size: 1.8rem; }
+    .ranking .wrapper2 .header .rancard {
+      width: 40%;
+      display: flex; }
+      .ranking .wrapper2 .header .rancard .rank {
+        padding: 0 2rem; }
+      .ranking .wrapper2 .header .rancard .artist {
+        padding-left: 3rem; }
+  .ranking .wrapper2 .row {
+    margin-top: 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #333;
+    font-size: 2rem;
+    color: #fff; }
+    .ranking .wrapper2 .row .rancard {
+      width: 40%;
+      display: flex;
+      align-items: center; }
+      .ranking .wrapper2 .row .rancard .rank {
+        padding: 0.5rem 1rem;
+        border-radius: 50%; }
+      .ranking .wrapper2 .row .rancard .artist {
+        display: flex;
+        align-items: center;
+        font-size: 2.2rem; }
+        .ranking .wrapper2 .row .rancard .artist img {
+          border-radius: 50%;
+          padding: 0 2rem;
+          width: 100px; }
+    .ranking .wrapper2 .row .change,
+    .ranking .wrapper2 .row .sold,
+    .ranking .wrapper2 .row .volume {
+      display: flex;
+      align-items: center;
+      font-size: 1.6rem; }
+    .ranking .wrapper2 .row .green {
+      color: #04d264; }
+
+.mphead {
+  min-height: 30vh;
+  flex-direction: column; }
+  .mphead .wrapper {
+    line-height: 5rem;
+    padding: 4rem 0; }
+    .mphead .wrapper p {
+      padding-bottom: 3rem; }
+    .mphead .wrapper .searchinput {
+      border: 1px solid #858584;
+      margin: auto;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      border-radius: 20px;
+      position: relative; }
+      .mphead .wrapper .searchinput input {
+        font-size: 2rem;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        background: none;
+        padding: 1rem 2rem;
+        border: none; }
+        .mphead .wrapper .searchinput input:focus {
+          outline: 1px solid #a259ff;
+          border-radius: 20px; }
+        .mphead .wrapper .searchinput input::placeholder {
+          font-size: 1.8rem; }
+      .mphead .wrapper .searchinput img {
+        position: absolute;
+        top: 30%;
+        right: 30px; }
+
+.marketnft nav .tabs {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem; }
+  .marketnft nav .tabs li {
+    width: 50%;
+    text-align: center; }
+    .marketnft nav .tabs li a {
+      width: 100%;
+      display: inline-block;
+      padding-bottom: 1.6rem;
+      font-size: 2.2rem;
+      border-bottom: 2px solid #2b2b2b; }
+      .marketnft nav .tabs li a .num {
+        padding: 1rem;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 1.6rem; }
+      .marketnft nav .tabs li a:hover {
+        color: #fff; }
+      .marketnft nav .tabs li a:focus {
+        color: #fff;
+        border-bottom-color: #fff; }
+        .marketnft nav .tabs li a:focus .num {
+          background: #bbbbb9;
+          padding: 1rem; }
+.marketnft .nftcards .wrapper2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 6rem 0; }
+
+.imgplace {
+  background: url(../Arts:img/space-min.png);
+  width: 100%;
+  min-height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.artistsinfo .wrapper {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between; }
+  .artistsinfo .wrapper .nftinfo {
+    width: 55%; }
+    .artistsinfo .wrapper .nftinfo .nft-addinfo .author-info {
+      padding: 2rem 0; }
+      .artistsinfo .wrapper .nftinfo .nft-addinfo .author-info .avatar {
+        display: flex;
+        font-size: 1.6rem;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.5rem 0 1.6rem 0; }
+        .artistsinfo .wrapper .nftinfo .nft-addinfo .author-info .avatar img {
+          width: 25px;
+          border-radius: 50%; }
+    .artistsinfo .wrapper .nftinfo .nft-addinfo .description {
+      width: 100%; }
+      .artistsinfo .wrapper .nftinfo .nft-addinfo .description h5 {
+        margin-bottom: 1.5rem; }
+      .artistsinfo .wrapper .nftinfo .nft-addinfo .description p {
+        line-height: 3.2rem; }
+      .artistsinfo .wrapper .nftinfo .nft-addinfo .description .parag1 {
+        padding-bottom: 2rem; }
+    .artistsinfo .wrapper .nftinfo .nft-addinfo .details h5 {
+      margin-bottom: 1.5rem; }
+    .artistsinfo .wrapper .nftinfo .nft-addinfo .details .weblink {
+      display: flex;
+      flex-direction: column; }
+      .artistsinfo .wrapper .nftinfo .nft-addinfo .details .weblink a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        font-size: 1.8rem; }
+    .artistsinfo .wrapper .nftinfo .nft-addinfo .details .tags ul {
+      display: flex; }
+      .artistsinfo .wrapper .nftinfo .nft-addinfo .details .tags ul li {
+        margin-right: 2rem;
+        text-transform: uppercase; }
+        .artistsinfo .wrapper .nftinfo .nft-addinfo .details .tags ul li a {
+          background: #3b3b3b;
+          padding: 1rem 3rem;
+          border-radius: 20px; }
+  .artistsinfo .wrapper .countdown {
+    width: 300px;
+    height: 220px;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    color: #fff; }
+    .artistsinfo .wrapper .countdown p,
+    .artistsinfo .wrapper .countdown .par {
+      font-size: 1.4rem; }
+    .artistsinfo .wrapper .countdown p {
+      text-align: start;
+      padding: 0 0 0.5rem 1rem; }
+    .artistsinfo .wrapper .countdown .time {
+      display: flex;
+      justify-content: center;
+      gap: 30px; }
+    .artistsinfo .wrapper .countdown .unit {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .artistsinfo .wrapper .countdown .number {
+      font-size: 3rem;
+      font-weight: bold; }
+  .artistsinfo .wrapper .btn {
+    width: 100%;
+    margin-top: 2rem; }
+
+.morenfts .nfts-subhead {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4rem; }
+  .morenfts .nfts-subhead .btn {
+    background-color: #2b2b2b; }
+    .morenfts .nfts-subhead .btn a {
+      color: #fff; }
+.morenfts .wrapper2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 6rem 0; }
+
+.covpro {
+  position: relative; }
+  .covpro .coverimg {
+    background: linear-gradient(0, #a259ff, transparent), url(../Arts:img/Castle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 400px; }
+  .covpro .proimg {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 32%;
+    left: 17rem; }
+    .covpro .proimg img {
+      border: 2px solid;
+      border-radius: 20px;
+      width: 100%;
+      height: 100%; }
+  .covpro .wrapper {
+    padding: 10rem 0 5rem 0; }
+    .covpro .wrapper .artinfo-subhead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .covpro .wrapper .artinfo-subhead .btns .btn1 {
+        margin-right: 1rem; }
+      .covpro .wrapper .artinfo-subhead .btns .btn2 {
+        background: #2b2b2b;
+        color: #fff; }
+        .covpro .wrapper .artinfo-subhead .btns .btn2 img {
+          width: 20px;
+          height: 20px; }
+    .covpro .wrapper .artadd-info h5 {
+      padding-bottom: 1rem; }
+    .covpro .wrapper .artadd-info .statscontainer {
+      color: #fff;
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5rem 0 2rem 0; }
+      .covpro .wrapper .artadd-info .statscontainer .stat {
+        font-size: 2.5rem;
+        font-weight: 900; }
+        .covpro .wrapper .artadd-info .statscontainer .stat .prop {
+          font-size: 2rem; }
+    .covpro .wrapper .artadd-info .bio {
+      padding-bottom: 2rem; }
+    .covpro .wrapper .artadd-info .links ul {
+      display: flex; }
+      .covpro .wrapper .artadd-info .links ul li {
+        padding-right: 0.5rem; }
+
+nav .tabs {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem; }
+  nav .tabs li {
+    width: 50%;
+    text-align: center; }
+    nav .tabs li a {
+      width: 100%;
+      display: inline-block;
+      padding-bottom: 1.6rem;
+      border-bottom: 2px solid #2b2b2b; }
+      nav .tabs li a .num {
+        padding: 1rem;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 1.6rem; }
+      nav .tabs li a:hover {
+        color: #fff; }
+      nav .tabs li a:focus {
+        color: #fff;
+        border-bottom-color: #fff; }
+        nav .tabs li a:focus .num {
+          background: #c8c8c7;
+          padding: 1rem; }
+
+.nftscards .wrapper2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 6rem 0; }
+  .nftscards .wrapper2 .nftcard {
+    background: #2b2b2b; }
+
+@media (max-width: 759.9px) {
+  h1 {
+    font-size: 3.8rem; }
+
+  h2,
+  h3 {
+    font-size: 2.8rem; }
+
+  .hidden1,
+  .hidden2 {
+    display: none; }
+
+  p {
+    font-size: 1.6rem; }
+
+  .main-head {
+    width: 100%;
+    min-height: 8vh;
+    display: flex;
+    align-items: center; }
+    .main-head nav ul .hidden0 {
+      display: contents; }
+    .main-head nav ul li {
+      display: none; }
+
+  .hero .wrapper {
+    padding-bottom: 15rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    width: 100%;
+    position: relative; }
+    .hero .wrapper .heading-card {
+      width: 85%;
+      margin: auto; }
+      .hero .wrapper .heading-card h1 {
+        width: 100%;
+        font-size: 2.8rem; }
+      .hero .wrapper .heading-card .body-text {
+        font-size: 1.6rem;
+        line-height: 2.24rem; }
+      .hero .wrapper .heading-card .stats-container {
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+        left: 10%; }
+        .hero .wrapper .heading-card .stats-container .stat {
+          font-size: 2rem; }
+      .hero .wrapper .heading-card .btn {
+        padding: 0 2rem;
+        height: 55px;
+        width: 80%;
+        position: absolute;
+        bottom: 5%;
+        left: 10%; }
+        .hero .wrapper .heading-card .btn a {
+          font-size: 1.6rem; }
+    .hero .wrapper .nft-card {
+      margin: auto;
+      padding-top: 0;
+      width: 85%; }
+      .hero .wrapper .nft-card .img-card img {
+        height: 300px;
+        width: 100%; }
+
+  .trend-collection .wrapper .subhead {
+    line-height: 3rem; }
+    .trend-collection .wrapper .subhead p {
+      line-height: 2.5rem; }
+  .trend-collection .wrapper2 .collection {
+    width: 400px; }
+    .trend-collection .wrapper2 .collection .hidden2,
+    .trend-collection .wrapper2 .collection .hidden1 {
+      display: none; }
+    .trend-collection .wrapper2 .collection .secondary-photo .number {
+      padding: 0 1.5rem; }
+    .trend-collection .wrapper2 .collection .avatar {
+      font-size: 1.6rem; }
+
+  .creators {
+    position: relative; }
+    .creators .wrapper .collect {
+      display: flex; }
+      .creators .wrapper .collect p {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        padding-bottom: 3rem; }
+      .creators .wrapper .collect .btn {
+        height: 45px;
+        padding: 1rem 2rem;
+        width: 80%;
+        position: absolute;
+        bottom: 2rem;
+        z-index: 10;
+        pointer-events: auto; }
+        .creators .wrapper .collect .btn a {
+          font-size: 1.6rem; }
+    .creators .wrapper2 {
+      position: relative;
+      padding-bottom: 10rem; }
+      .creators .wrapper2 .creators-card {
+        width: 100%; }
+        .creators .wrapper2 .creators-card:nth-child(7), .creators .wrapper2 .creators-card:nth-child(8), .creators .wrapper2 .creators-card:nth-child(9), .creators .wrapper2 .creators-card:nth-child(10), .creators .wrapper2 .creators-card:nth-child(11), .creators .wrapper2 .creators-card:nth-child(12) {
+          display: none; }
+        .creators .wrapper2 .creators-card a {
+          display: flex;
+          padding: 0; }
+          .creators .wrapper2 .creators-card a .rank-num {
+            top: 1rem;
+            left: 1rem;
+            font-size: 1.4rem;
+            padding: 0.75rem 1.2rem; }
+          .creators .wrapper2 .creators-card a .img-card {
+            padding: 0;
+            width: 20%; }
+            .creators .wrapper2 .creators-card a .img-card img {
+              width: 100%; }
+          .creators .wrapper2 .creators-card a .add-info {
+            text-align: start;
+            padding-right: 1rem; }
+            .creators .wrapper2 .creators-card a .add-info h5 {
+              font-size: 2rem; }
+            .creators .wrapper2 .creators-card a .add-info .sale {
+              font-size: 1.4rem; }
+
+  .browse {
+    width: 100%; }
+    .browse .wrapper2 {
+      gap: 1rem; }
+      .browse .wrapper2 .browse-card {
+        width: 48%; }
+        .browse .wrapper2 .browse-card h5 {
+          font-size: 2rem; }
+
+  .discover {
+    position: relative; }
+    .discover .wrapper {
+      line-height: 3.5rem; }
+      .discover .wrapper .test .btn {
+        width: 80%;
+        position: absolute;
+        left: 10%;
+        bottom: 2rem;
+        z-index: 10px;
+        pointer-events: auto;
+        height: 45px; }
+        .discover .wrapper .test .btn a {
+          font-size: 1.8rem; }
+    .discover .wrapper2 {
+      padding-bottom: 8rem;
+      gap: 2.5rem;
+      display: flex;
+      flex-wrap: wrap; }
+      .discover .wrapper2 .card {
+        width: 100%; }
+
+  .magic-mashroom {
+    min-height: 80vh;
+    position: relative; }
+    .magic-mashroom .wrapper {
+      padding-bottom: 5rem;
+      display: flex;
+      flex-wrap: wrap; }
+      .magic-mashroom .wrapper .mushroom {
+        width: 100%; }
+        .magic-mashroom .wrapper .mushroom .avatar a {
+          font-size: 1.6rem; }
+        .magic-mashroom .wrapper .mushroom h2 {
+          font-size: 3.8rem;
+          width: 50%; }
+        .magic-mashroom .wrapper .mushroom .btn {
+          width: 100%;
+          height: 50px;
+          position: absolute;
+          bottom: -1.5rem; }
+      .magic-mashroom .wrapper .time-auction {
+        width: 100%;
+        padding: 2rem 0; }
+        .magic-mashroom .wrapper .time-auction p {
+          padding-top: 0; }
+
+  .how-works .wrapper {
+    line-height: 3.5rem; }
+    .how-works .wrapper h3 {
+      font-size: 3rem; }
+    .how-works .wrapper p {
+      font-size: 1.8rem; }
+  .how-works .wrapper2 {
+    display: flex;
+    gap: 2rem; }
+    .how-works .wrapper2 .card-row {
+      display: flex;
+      padding: 0;
+      width: 100%; }
+      .how-works .wrapper2 .card-row .img-card {
+        padding: 3rem 0.5rem;
+        width: 40%; }
+        .how-works .wrapper2 .card-row .img-card img {
+          width: 100%; }
+      .how-works .wrapper2 .card-row .card-text {
+        width: 60%;
+        text-align: start;
+        padding: 1.5rem 0.5rem; }
+        .how-works .wrapper2 .card-row .card-text h5 {
+          font-size: 1.6rem; }
+        .how-works .wrapper2 .card-row .card-text p {
+          line-height: 1.8rem;
+          padding: 1rem 0;
+          font-size: 1.4rem; }
+
+  .sub-widget {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0; }
+    .sub-widget .wrapper {
+      background: none;
+      display: flex;
+      flex-direction: column;
+      width: 85%;
+      padding: 0; }
+      .sub-widget .wrapper .img-card {
+        width: 100%; }
+        .sub-widget .wrapper .img-card img {
+          width: 100%; }
+      .sub-widget .wrapper .sub-form {
+        width: 100%; }
+        .sub-widget .wrapper .sub-form .sub-head h3 {
+          font-size: 3rem; }
+        .sub-widget .wrapper .sub-form .sub-head p {
+          line-height: 2.5rem;
+          font-size: 1.6rem; }
+        .sub-widget .wrapper .sub-form form {
+          display: flex;
+          flex-direction: column; }
+          .sub-widget .wrapper .sub-form form .input-box {
+            padding-bottom: 2rem; }
+            .sub-widget .wrapper .sub-form form .input-box input {
+              border-radius: 35px;
+              width: 100%;
+              padding: 1.2rem 2.2rem; }
+          .sub-widget .wrapper .sub-form form .btn-sub {
+            height: 50px;
+            padding: 1rem 2rem;
+            border-radius: 35px;
+            font-size: 1.6rem; }
+
+  footer .wrapper {
+    width: 85%;
+    display: flex;
+    flex-direction: column; }
+    footer .wrapper .marketplace-info {
+      width: 100%; }
+      footer .wrapper .marketplace-info .addition-info {
+        width: 100%;
+        padding-bottom: 2rem; }
+    footer .wrapper .explore {
+      width: 100%; }
+    footer .wrapper .subscribe {
+      width: 100%; }
+      footer .wrapper .subscribe .sub-form .sub-text {
+        width: 100%; }
+      footer .wrapper .subscribe .sub-form form {
+        display: flex;
+        flex-direction: column; }
+        footer .wrapper .subscribe .sub-form form .input-box {
+          padding-bottom: 2rem; }
+          footer .wrapper .subscribe .sub-form form .input-box input {
+            border-radius: 35px;
+            width: 100%;
+            padding: 1.7rem 2.2rem; }
+        footer .wrapper .subscribe .sub-form form .btn-sub {
+          height: 50px;
+          padding: 1rem 2rem;
+          border-radius: 35px;
+          font-size: 1.6rem; }
+    footer .wrapper .frame p {
+      font-size: 1.2rem; }
+
+  .hero-create-acc .creating-acc-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    .hero-create-acc .creating-acc-wrapper .img-card {
+      width: 100%;
+      height: 350px; }
+      .hero-create-acc .creating-acc-wrapper .img-card img {
+        width: 100%;
+        height: 100%; }
+    .hero-create-acc .creating-acc-wrapper .form-card {
+      width: 100%; }
+      .hero-create-acc .creating-acc-wrapper .form-card .caa-heading {
+        width: 85%;
+        margin: 0 auto;
+        padding-top: 4rem; }
+        .hero-create-acc .creating-acc-wrapper .form-card .caa-heading h2 {
+          font-size: 3.8rem; }
+        .hero-create-acc .creating-acc-wrapper .form-card .caa-heading p {
+          line-height: 2.4rem;
+          font-size: 1.6rem; }
+      .hero-create-acc .creating-acc-wrapper .form-card form {
+        width: 85%;
+        margin: auto; }
+        .hero-create-acc .creating-acc-wrapper .form-card form .input-box {
+          width: 100%; }
+        .hero-create-acc .creating-acc-wrapper .form-card form .btn {
+          width: 100%;
+          margin-bottom: 3.5rem; }
+
+  .hero-conwallet .conwallet-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    .hero-conwallet .conwallet-wrapper .img-card {
+      width: 100%;
+      height: 350px; }
+      .hero-conwallet .conwallet-wrapper .img-card img {
+        width: 100%;
+        height: 100%; }
+    .hero-conwallet .conwallet-wrapper .wallet-card {
+      width: 100%; }
+      .hero-conwallet .conwallet-wrapper .wallet-card .wallet-heading {
+        width: 85%;
+        margin: 0 auto;
+        padding-top: 4rem; }
+        .hero-conwallet .conwallet-wrapper .wallet-card .wallet-heading h2 {
+          font-size: 3.8rem; }
+        .hero-conwallet .conwallet-wrapper .wallet-card .wallet-heading p {
+          line-height: 2.4rem;
+          font-size: 1.6rem; }
+      .hero-conwallet .conwallet-wrapper .wallet-card .wallet-options {
+        width: 85%;
+        margin: auto;
+        padding-bottom: 2rem; }
+
+  .ra-heading .wrapper h2 {
+    font-size: 2.8rem; }
+  .ra-heading .wrapper p {
+    font-size: 1.4rem; }
+
+  nav .none {
+    display: none; }
+  nav .show .tab {
+    display: contents; }
+    nav .show .tab a {
+      font-size: 1.6rem; }
+
+  .ranking .wrapper2 .header .change,
+  .ranking .wrapper2 .header .sold {
+    display: none; }
+  .ranking .wrapper2 .row {
+    padding: 1rem 1rem; }
+    .ranking .wrapper2 .row .rancard {
+      width: 77%; }
+      .ranking .wrapper2 .row .rancard .rank {
+        font-size: 1.6rem;
+        padding: 0.75rem 1rem; }
+      .ranking .wrapper2 .row .rancard .artist {
+        font-size: 1.6rem; }
+        .ranking .wrapper2 .row .rancard .artist img {
+          width: 70px;
+          padding: 0 0.75rem; }
+    .ranking .wrapper2 .row .change,
+    .ranking .wrapper2 .row .sold {
+      display: none; }
+    .ranking .wrapper2 .row .volume {
+      font-size: 1.4rem; }
+
+  .mphead .wrapper {
+    line-height: 3rem;
+    padding: 2rem 0; }
+    .mphead .wrapper .searchinput {
+      height: 60px;
+      position: relative; }
+      .mphead .wrapper .searchinput input {
+        font-size: 1.8rem; }
+        .mphead .wrapper .searchinput input::placeholder {
+          font-size: 1.6rem; }
+
+  .marketnft nav .tabs {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem; }
+    .marketnft nav .tabs li a {
+      font-size: 2rem; }
+      .marketnft nav .tabs li a .num {
+        font-size: 1.4rem; }
+  .marketnft .nftcards .wrapper2 {
+    padding: 4rem 0; }
+    .marketnft .nftcards .wrapper2 .card {
+      width: 100%; }
+    .marketnft .nftcards .wrapper2 .hidden {
+      display: none; }
+
+  .imgplace {
+    min-height: 40vh; }
+
+  .artistsinfo {
+    position: relative; }
+    .artistsinfo .wrapper {
+      padding: 2rem 0;
+      display: flex;
+      flex-direction: column; }
+      .artistsinfo .wrapper .nftinfo-subhead {
+        padding-bottom: 22rem; }
+      .artistsinfo .wrapper .nftinfo {
+        width: 100%; }
+        .artistsinfo .wrapper .nftinfo .nft-addinfo .author-info {
+          padding: 2rem 0; }
+          .artistsinfo .wrapper .nftinfo .nft-addinfo .author-info .avatar {
+            padding-left: 0; }
+            .artistsinfo .wrapper .nftinfo .nft-addinfo .author-info .avatar img {
+              width: 30px; }
+        .artistsinfo .wrapper .nftinfo .nft-addinfo .description {
+          width: 100%; }
+          .artistsinfo .wrapper .nftinfo .nft-addinfo .description h5 {
+            margin-bottom: 1.5rem; }
+          .artistsinfo .wrapper .nftinfo .nft-addinfo .description p {
+            line-height: 2rem; }
+        .artistsinfo .wrapper .nftinfo .nft-addinfo .details h5 {
+          margin-bottom: 1.5rem; }
+        .artistsinfo .wrapper .nftinfo .nft-addinfo .details .weblink a {
+          margin-bottom: 1rem; }
+        .artistsinfo .wrapper .nftinfo .nft-addinfo .details .tags ul {
+          display: flex;
+          flex-direction: column; }
+          .artistsinfo .wrapper .nftinfo .nft-addinfo .details .tags ul li {
+            margin: 2rem 0 2rem 0; }
+      .artistsinfo .wrapper .countdown {
+        width: 80%;
+        height: 200px;
+        margin: 1rem auto;
+        position: absolute;
+        top: 8rem; }
+        .artistsinfo .wrapper .countdown p,
+        .artistsinfo .wrapper .countdown .par {
+          font-size: 1.4rem; }
+        .artistsinfo .wrapper .countdown .btn {
+          height: 50px; }
+          .artistsinfo .wrapper .countdown .btn a {
+            font-size: 1.6rem; }
+
+  .morenfts {
+    position: relative; }
+    .morenfts .nfts-subhead {
+      width: 80%;
+      display: flex;
+      flex-direction: column; }
+      .morenfts .nfts-subhead h3 {
+        font-size: 2.8rem; }
+      .morenfts .nfts-subhead .btn {
+        height: 55px;
+        position: absolute;
+        left: 10%;
+        bottom: 2rem;
+        width: 80%;
+        z-index: 10;
+        pointer-events: auto; }
+        .morenfts .nfts-subhead .btn a {
+          font-size: 1.6rem; }
+    .morenfts .nftcards .wrapper2 {
+      padding: 4rem 0 10rem 0; }
+      .morenfts .nftcards .wrapper2 .nftcard {
+        width: 100%; }
+      .morenfts .nftcards .wrapper2 .hidden1,
+      .morenfts .nftcards .wrapper2 .hidden2 {
+        display: none; }
+
+  .covpro .proimg {
+    left: 12rem; }
+  .covpro .wrapper {
+    padding: 10rem 0 5rem 0; }
+    .covpro .wrapper .artinfo-subhead {
+      display: flex;
+      flex-direction: column; }
+      .covpro .wrapper .artinfo-subhead h2 {
+        padding-bottom: 3rem; }
+      .covpro .wrapper .artinfo-subhead .btns .btn1,
+      .covpro .wrapper .artinfo-subhead .btns .btn2 {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 1.5rem; }
+        .covpro .wrapper .artinfo-subhead .btns .btn1 a,
+        .covpro .wrapper .artinfo-subhead .btns .btn2 a {
+          font-size: 1.6rem; }
+    .covpro .wrapper .artadd-info .statscontainer {
+      width: 100%; }
+      .covpro .wrapper .artadd-info .statscontainer .stat {
+        font-size: 1.8rem; }
+        .covpro .wrapper .artadd-info .statscontainer .stat .prop {
+          font-size: 1.4rem; }
+
+  nav .tabs {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem; }
+    nav .tabs li a {
+      font-size: 1.6rem; }
+      nav .tabs li a .num {
+        font-size: 1.4rem; }
+
+  .nftscards .wrapper2 {
+    position: relative;
+    padding: 4rem 0 13rem 0; }
+    .nftscards .wrapper2 .nftcard {
+      width: 100%; }
+    .nftscards .wrapper2 .hidden,
+    .nftscards .wrapper2 .hidden2 {
+      display: none; } }
+@media (min-width: 760px) and (max-width: 1124px) {
+  h1 {
+    font-size: 3.8rem; }
+
+  h2,
+  h3 {
+    font-size: 2.8rem; }
+
+  .hidden2 {
+    display: none; }
+
+  .hidden0 {
+    display: contents; }
+
+  p {
+    font-size: 1.6rem; }
+
+  .main-head {
+    min-height: 8vh;
+    display: flex;
+    align-items: center; }
+    .main-head nav ul .hidden0 {
+      display: contents; }
+    .main-head nav ul li {
+      display: none; }
+
+  .hero {
+    min-height: 60vh;
+    width: 100%; }
+    .hero .wrapper .heading-card h1 {
+      font-size: 3.8rem; }
+    .hero .wrapper .heading-card .body-text {
+      font-size: 1.6rem;
+      line-height: 2.24rem; }
+    .hero .wrapper .heading-card .btn {
+      padding: 0 2.5rem;
+      height: 60px; }
+      .hero .wrapper .heading-card .btn a {
+        font-size: 1.8rem; }
+    .hero .wrapper .heading-card .stats-container .stat {
+      font-size: 2rem; }
+    .hero .wrapper .nft-card {
+      margin: auto;
+      padding-top: 0; }
+      .hero .wrapper .nft-card .img-card img {
+        height: 330px;
+        width: 100%; }
+
+  .trend-collection {
+    min-height: 60vh; }
+    .trend-collection .wrapper .subhead {
+      line-height: 3.2rem; }
+      .trend-collection .wrapper .subhead h3 {
+        font-size: 2.8rem; }
+      .trend-collection .wrapper .subhead p {
+        font-size: 1.6rem; }
+    .trend-collection .wrapper2 .hidden2 {
+      display: none; }
+    .trend-collection .wrapper2 .collection {
+      width: 48%; }
+      .trend-collection .wrapper2 .collection .avatar {
+        font-size: 1.6rem; }
+
+  .creators {
+    min-height: 60vh; }
+    .creators .wrapper .collect {
+      display: flex; }
+      .creators .wrapper .collect p {
+        font-size: 1.6rem; }
+      .creators .wrapper .collect .btn {
+        height: 55px;
+        padding: 0 2.5rem; }
+        .creators .wrapper .collect .btn a {
+          font-size: 1.8rem;
+          padding: 0; }
+          .creators .wrapper .collect .btn a img {
+            width: 18px; }
+    .creators .wrapper2 {
+      position: relative;
+      display: flex;
+      gap: 1.5rem; }
+      .creators .wrapper2 .creators-card {
+        width: 48%; }
+        .creators .wrapper2 .creators-card:nth-child(7), .creators .wrapper2 .creators-card:nth-child(8), .creators .wrapper2 .creators-card:nth-child(9), .creators .wrapper2 .creators-card:nth-child(10), .creators .wrapper2 .creators-card:nth-child(11), .creators .wrapper2 .creators-card:nth-child(12) {
+          display: none; }
+        .creators .wrapper2 .creators-card a {
+          display: flex; }
+          .creators .wrapper2 .creators-card a .rank-num {
+            top: 1rem;
+            left: 1rem;
+            font-size: 1.4rem; }
+          .creators .wrapper2 .creators-card a .img-card {
+            padding: 0;
+            width: 20%; }
+            .creators .wrapper2 .creators-card a .img-card img {
+              width: 100%; }
+          .creators .wrapper2 .creators-card a .add-info {
+            text-align: start;
+            padding-right: 1rem; }
+
+  .browse {
+    min-height: 60vh; }
+    .browse .wrapper2 {
+      gap: 1.5rem; }
+      .browse .wrapper2 .browse-card h5 {
+        padding: 1.5rem 0 2rem 1rem; }
+
+  .discover {
+    min-height: 60vh; }
+    .discover .wrapper2 .card {
+      width: 48%; }
+      .discover .wrapper2 .card:nth-child(3) {
+        display: none; }
+
+  .magic-mashroom {
+    min-height: 70vh; }
+    .magic-mashroom .wrapper .mushroom .btn {
+      height: 60px; }
+
+  .how-works {
+    min-height: 60vh; }
+    .how-works .wrapper {
+      line-height: 2.8rem; }
+      .how-works .wrapper h3 {
+        font-size: 2.8rem; }
+      .how-works .wrapper p {
+        font-size: 1.6rem; }
+    .how-works .wrapper2 .card-row {
+      padding: 2rem 2rem 1rem 2rem; }
+      .how-works .wrapper2 .card-row .img-card {
+        width: 100%; }
+        .how-works .wrapper2 .card-row .img-card img {
+          width: 100%; }
+      .how-works .wrapper2 .card-row .card-text h5 {
+        font-size: 2rem;
+        font-weight: bolder; }
+      .how-works .wrapper2 .card-row .card-text p {
+        padding: 1rem 0;
+        font-size: 1.6rem; }
+
+  .sub-widget {
+    min-height: 60vh;
+    padding: 0; }
+    .sub-widget .wrapper {
+      padding: 4rem 2rem;
+      gap: 2rem; }
+      .sub-widget .wrapper .img-card {
+        width: 45%; }
+        .sub-widget .wrapper .img-card img {
+          height: 330px;
+          width: 100%; }
+      .sub-widget .wrapper .sub-form .sub-head h3 {
+        font-size: 2.8rem; }
+      .sub-widget .wrapper .sub-form .sub-head p {
+        font-size: 1.8rem; }
+      .sub-widget .wrapper .sub-form form {
+        display: flex;
+        flex-direction: column; }
+        .sub-widget .wrapper .sub-form form .input-box {
+          padding-bottom: 2rem; }
+          .sub-widget .wrapper .sub-form form .input-box input {
+            border-radius: 35px;
+            width: 100%;
+            padding: 1.7rem 2.2rem; }
+        .sub-widget .wrapper .sub-form form .btn-sub {
+          height: 60px;
+          border-radius: 35px; }
+
+  footer .wrapper {
+    display: flex;
+    flex-direction: column; }
+    footer .wrapper .marketplace-info {
+      width: 100%; }
+    footer .wrapper .subscribe {
+      width: 100%; }
+      footer .wrapper .subscribe .sub-form .btn-sub {
+        padding: 0;
+        display: flex; }
+
+  .hero-create-acc {
+    min-height: 60px; }
+    .hero-create-acc .creating-acc-wrapper {
+      width: 100%; }
+      .hero-create-acc .creating-acc-wrapper .img-card {
+        width: 48%; }
+        .hero-create-acc .creating-acc-wrapper .img-card img {
+          height: 100%;
+          width: 100%; }
+      .hero-create-acc .creating-acc-wrapper .form-card {
+        width: 48%; }
+        .hero-create-acc .creating-acc-wrapper .form-card .caa-heading {
+          width: 100%;
+          padding-top: 4rem; }
+          .hero-create-acc .creating-acc-wrapper .form-card .caa-heading h2 {
+            font-size: 3.8rem; }
+        .hero-create-acc .creating-acc-wrapper .form-card form .input-box {
+          width: 90%; }
+        .hero-create-acc .creating-acc-wrapper .form-card form .btn {
+          width: 90%;
+          margin-bottom: 3rem; }
+
+  .hero-conwallet .conwallet-wrapper {
+    width: 100%; }
+    .hero-conwallet .conwallet-wrapper .img-card {
+      width: 48%; }
+      .hero-conwallet .conwallet-wrapper .img-card img {
+        height: 100%;
+        width: 100%; }
+    .hero-conwallet .conwallet-wrapper .wallet-card {
+      width: 48%; }
+      .hero-conwallet .conwallet-wrapper .wallet-card .wallet-heading {
+        width: 100%;
+        padding-top: 4rem; }
+        .hero-conwallet .conwallet-wrapper .wallet-card .wallet-heading h2 {
+          font-size: 3.8rem; }
+      .hero-conwallet .conwallet-wrapper .wallet-card .wallet-options {
+        width: 90%; }
+
+  .ra-heading {
+    min-height: 20vh; }
+    .ra-heading .wrapper h2 {
+      font-size: 3.8rem; }
+    .ra-heading .wrapper p {
+      font-size: 1.6rem; }
+
+  nav .wrapper {
+    width: 100%; }
+
+  .ranking .wrapper2 .header .sold {
+    display: none; }
+  .ranking .wrapper2 .row .rancard {
+    width: 45%; }
+  .ranking .wrapper2 .row .sold {
+    display: none; }
+
+  .mphead .wrapper {
+    line-height: 3rem;
+    padding: 2rem 0; }
+    .mphead .wrapper .searchinput {
+      position: relative; }
+      .mphead .wrapper .searchinput input {
+        font-size: 1.8rem; }
+        .mphead .wrapper .searchinput input::placeholder {
+          font-size: 1.6rem; }
+
+  .marketnft nav .tabs {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem; }
+    .marketnft nav .tabs li a {
+      font-size: 2rem; }
+      .marketnft nav .tabs li a .num {
+        font-size: 1.4rem; }
+  .marketnft .nftcards .wrapper2 {
+    padding: 4rem 0;
+    gap: 2rem; }
+    .marketnft .nftcards .wrapper2 .card {
+      width: 48%; }
+    .marketnft .nftcards .wrapper2 .hidden:nth-child(3),
+    .marketnft .nftcards .wrapper2 .hidden:nth-child(5),
+    .marketnft .nftcards .wrapper2 .hidden:nth-child(6),
+    .marketnft .nftcards .wrapper2 .hidden:nth-child(7) {
+      display: none; }
+
+  .imgplace {
+    min-height: 50vh; }
+
+  .artistsinfo .wrapper {
+    padding: 2rem 0; }
+    .artistsinfo .wrapper .nftinfo {
+      width: 100%; }
+      .artistsinfo .wrapper .nftinfo .nft-addinfo .author-info {
+        padding: 2rem 0; }
+        .artistsinfo .wrapper .nftinfo .nft-addinfo .author-info .avatar {
+          padding-left: 0; }
+          .artistsinfo .wrapper .nftinfo .nft-addinfo .author-info .avatar img {
+            width: 30px; }
+      .artistsinfo .wrapper .nftinfo .nft-addinfo .description {
+        width: 100%; }
+        .artistsinfo .wrapper .nftinfo .nft-addinfo .description h5 {
+          margin-bottom: 1.5rem; }
+        .artistsinfo .wrapper .nftinfo .nft-addinfo .description p {
+          font-size: 1.6rem;
+          line-height: 2rem; }
+      .artistsinfo .wrapper .nftinfo .nft-addinfo .details h5 {
+        margin-bottom: 1.5rem; }
+      .artistsinfo .wrapper .nftinfo .nft-addinfo .details .weblink a {
+        margin-bottom: 1rem; }
+      .artistsinfo .wrapper .nftinfo .nft-addinfo .details .tags ul {
+        display: flex;
+        flex-direction: column; }
+        .artistsinfo .wrapper .nftinfo .nft-addinfo .details .tags ul li {
+          margin: 2rem 0 2rem 0; }
+    .artistsinfo .wrapper .countdown {
+      height: 200px;
+      margin: 1rem auto; }
+      .artistsinfo .wrapper .countdown .btn {
+        height: 60px; }
+      .artistsinfo .wrapper .countdown p,
+      .artistsinfo .wrapper .countdown .par {
+        font-size: 1.4rem; }
+
+  .morenfts .nfts-subhead {
+    width: 80%;
+    display: flex;
+    align-items: center; }
+    .morenfts .nfts-subhead .btn {
+      height: 60px; }
+      .morenfts .nfts-subhead .btn a {
+        font-size: 1.8rem; }
+  .morenfts .nftcards .wrapper2 {
+    padding: 4rem 0; }
+    .morenfts .nftcards .wrapper2 .nftcard {
+      width: 48%; }
+    .morenfts .nftcards .wrapper2 .hidden2 {
+      display: none; }
+
+  .covpro .wrapper .artinfo-subhead .btns .btn1,
+  .covpro .wrapper .artinfo-subhead .btns .btn2 {
+    height: 60px; }
+  .covpro .wrapper .artadd-info .statscontainer {
+    width: 40%; }
+    .covpro .wrapper .artadd-info .statscontainer .stat {
+      font-size: 2rem; }
+      .covpro .wrapper .artadd-info .statscontainer .stat .prop {
+        font-size: 1.6rem; }
+
+  .nftscards .wrapper2 {
+    padding: 4rem 0;
+    gap: 2rem; }
+    .nftscards .wrapper2 .nftcard {
+      width: 48%; }
+    .nftscards .wrapper2 .hidden2 {
+      display: none; } }
+
+/*# sourceMappingURL=main.css.map */
